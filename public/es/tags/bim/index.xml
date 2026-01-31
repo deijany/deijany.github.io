@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bim on Deijany RL</title>
+    <link>http://localhost:1313/es/tags/bim/</link>
+    <description>Recent content in Bim on Deijany RL</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/bim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering</title>
+      <link>http://localhost:1313/es/blog/real-time-slab-deflection-analysis/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/real-time-slab-deflection-analysis/</guid>
+      <description>&lt;p&gt;🔧 Real-time information about slab deflections during construction? Yes, it&amp;rsquo;s possible—and I developed it! At &lt;a href=&#34;https://obralink.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ObraLink&lt;/a&gt;, I led the design and implementation of a new functionality that automatically analyzes slab deflections in real-time using BIM data and sensors. No manual modeling. No delays. Just key structural information, precisely when needed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;video-demonstration&#34;&gt;Video Demonstration&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;div class=&#34;aspect-video w-full my-4&#34;&gt;&#xA;  &lt;iframe&#xA;    src=&#34;https://www.youtube.com/embed/5wn4zLR0ceU?rel=0&#34;&#xA;    class=&#34;w-full h-full&#34;&#xA;    title=&#34;Reproductor de YouTube&#34;&#xA;    frameborder=&#34;0&#34;&#xA;    allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34;&#xA;    allowfullscreen&#xA;    style=&#34;border:0;&#34;&#xA;  &gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;em&gt;Real-time slab deflection analysis in action - Watch how the tool automatically processes BIM data and provides instant structural insights&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering</title>
+      <link>http://localhost:1313/es/engineering/real-time-slab-deflection-analysis/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/engineering/real-time-slab-deflection-analysis/</guid>
+      <description>&lt;p&gt;🔧 Real-time information about slab deflections during construction? Yes, it&amp;rsquo;s possible—and I developed it! At &lt;a href=&#34;https://obralink.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ObraLink&lt;/a&gt;, I led the design and implementation of a new functionality that automatically analyzes slab deflections in real-time using BIM data and sensors. No manual modeling. No delays. Just key structural information, precisely when needed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;video-demonstration&#34;&gt;Video Demonstration&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;div class=&#34;aspect-video w-full my-4&#34;&gt;&#xA;  &lt;iframe&#xA;    src=&#34;https://www.youtube.com/embed/5wn4zLR0ceU?rel=0&#34;&#xA;    class=&#34;w-full h-full&#34;&#xA;    title=&#34;Reproductor de YouTube&#34;&#xA;    frameborder=&#34;0&#34;&#xA;    allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34;&#xA;    allowfullscreen&#xA;    style=&#34;border:0;&#34;&#xA;  &gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;em&gt;Real-time slab deflection analysis in action - Watch how the tool automatically processes BIM data and provides instant structural insights&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

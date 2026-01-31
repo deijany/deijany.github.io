@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+    <script>
+  window.PEXELS_API_KEY = "K5NOC1xEcfltFMyFONDScBzJgXCW6KXDS9bVU4xlaNUTsIxSsQabZp7p";
+  window.PEXELS_QUERIES = "[\"signal processing\",\"wireless communications\",\"5g base station\"]";
+</script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<title>
+  
+    Seismic Performance of Reinforced Concrete Wall Structures: A Comprehensive Study | Deijany RL
+  
+</title>
+
+
+<meta name="description" content="Exploring my thesis research on the seismic performance of reinforced concrete wall structures commonly found in Chile, using advanced fiber models and time-history analyses to understand structural behavior under earthquake loads." />
+<meta name="author" content="Deijany Rodriguez Linares" />
+<link rel="canonical" href="http://localhost:1313/es/blog/thesis-structural-engineering-innovation/" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Seismic Performance of Reinforced Concrete Wall Structures: A Comprehensive Study | Deijany RL" />
+<meta property="og:description" content="Exploring my thesis research on the seismic performance of reinforced concrete wall structures commonly found in Chile, using advanced fiber models and time-history analyses to understand structural behavior under earthquake loads." />
+<meta property="og:url" content="http://localhost:1313/es/blog/thesis-structural-engineering-innovation/" />
+<meta property="og:image" content="http://localhost:1313/images/face5.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Deijany RL" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Seismic Performance of Reinforced Concrete Wall Structures: A Comprehensive Study | Deijany RL" />
+<meta name="twitter:description" content="Exploring my thesis research on the seismic performance of reinforced concrete wall structures commonly found in Chile, using advanced fiber models and time-history analyses to understand structural behavior under earthquake loads." />
+<meta name="twitter:image" content="http://localhost:1313/images/face5.jpg" />
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+
+    
+    
+    <style>
+ 
+:root {
+   
+  
+  
+  --color-primary: #474A51;
+  --color-second: #E52521;
+  --color-third: #3CB043;
+  
+  
+   
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 80%, white);
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-primary-lighter: color-mix(in srgb, var(--color-primary) 20%, white);
+  
+  --color-second-light: color-mix(in srgb, var(--color-second) 80%, white);
+  --color-second-dark: color-mix(in srgb, var(--color-second) 80%, black);
+  --color-second-lighter: color-mix(in srgb, var(--color-second) 20%, white);
+  
+  --color-third-light: color-mix(in srgb, var(--color-third) 80%, white);
+  --color-third-dark: color-mix(in srgb, var(--color-third) 80%, black);
+  --color-third-lighter: color-mix(in srgb, var(--color-third) 20%, white);
+  
+   
+  --color-gray-50: color-mix(in srgb, var(--color-primary) 5%, white);
+  --color-gray-100: color-mix(in srgb, var(--color-primary) 10%, white);
+  --color-gray-300: color-mix(in srgb, var(--color-primary) 20%, white);
+  --color-gray-400: color-mix(in srgb, var(--color-primary) 30%, white);
+  --color-gray-500: color-mix(in srgb, var(--color-primary) 40%, white);
+  --color-gray-600: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-gray-700: color-mix(in srgb, var(--color-primary) 60%, black);
+  --color-gray-800: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-gray-900: color-mix(in srgb, var(--color-primary) 90%, black);
+  
+   
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+   
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-lighter: rgba(0, 0, 0, 0.05);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  
+   
+  --color-text-muted: var(--color-gray-500);
+  --color-border-secondary: var(--color-gray-300);
+  --color-success: var(--color-second);
+  
+   
+  --color-bg: var(--color-white);
+  --color-bg-secondary: var(--color-gray-100);
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-700);
+  --color-border: var(--color-gray-300);
+}
+
+ 
+.dark {
+  --color-bg: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-bg-secondary: color-mix(in srgb, var(--color-primary) 30%, black);
+  --color-bg-tertiary: color-mix(in srgb, var(--color-primary) 40%, black);
+  --color-text-primary: var(--color-gray-50);
+  --color-text-secondary: var(--color-gray-300);
+  --color-border: var(--color-gray-700);
+  --color-text-muted: var(--color-gray-400);
+  --color-border-secondary: var(--color-gray-600);
+}
+</style>
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.css?v=1769890162" data-version="1769890162">
+    <style>
+         
+        body {
+            visibility: hidden;
+        }
+        .dark body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-bg dark:bg-bg text-text-primary dark:text-text-primary flex flex-col min-h-screen transition-colors duration-200">
+
+    <nav class="fixed w-full bg-bg dark:bg-bg shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/es/" class="text-3xl font-bold text-text-primary dark:text-text-primary font-heading">Deijany R.L.</a>
+      </div>
+      <div class="hidden lg:flex items-center space-x-8">
+        
+          
+                      
+            
+            <a href="/es/#about" class="nav-link text-text-primary dark:text-text-primary">Sobre mí</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/es/#skills" class="nav-link text-text-primary dark:text-text-primary">Habilidades</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/es/#experience" class="nav-link text-text-primary dark:text-text-primary">Experiencia</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/es/#technical" class="nav-link text-text-primary dark:text-text-primary">Tech Stack</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/es/#contact" class="nav-link text-text-primary dark:text-text-primary">Contacto</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/es/engineering/" class="nav-link text-text-primary dark:text-text-primary">Ingeniería</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/es/contributions/" class="nav-link text-text-primary dark:text-text-primary">Contribuciones</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/es/blog/" class="nav-link text-text-primary dark:text-text-primary">Blog</a>
+          
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="relative group">
+          <a href="#" class="nav-link text-text-primary dark:text-text-primary flex items-center" aria-label="Language switcher">
+            <span class="text-lg mr-1">🇪🇸</span>
+            <i class="fas fa-chevron-down ml-1 text-sm"></i>
+          </a>
+          <div class="submenu absolute right-0 top-full mt-2 bg-bg dark:bg-bg shadow-lg rounded-lg z-50 min-w-[8rem] opacity-0 invisible">
+            
+            
+              
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                
+                
+                <a href="/blog/thesis-structural-engineering-innovation/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary ">
+                  <span class="mr-2">🇬🇧</span>English
+                </a>
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                <a href="/es/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary font-semibold">
+                  <span class="mr-2">🇪🇸</span>Español
+                </a>
+              
+            
+          </div>
+        </div>
+        
+
+        
+        <div class="flex items-center space-x-4" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          
+          
+          <a href="https://github.com/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          
+        </div>
+        
+        <button id="darkModeToggle" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+      </div>
+      <div class="lg:hidden flex items-center space-x-4">
+        
+        <button id="darkModeToggleMobile" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+        <button id="menu-btn" class="text-text-primary dark:text-text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="mobile-menu" class="hidden lg:hidden bg-bg dark:bg-bg shadow-lg">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      
+        
+          
+          <a href="/es/#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Sobre mí
+          </a>
+        
+        
+      
+        
+          
+          <a href="/es/#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Habilidades
+          </a>
+        
+        
+      
+        
+          
+          <a href="/es/#experience" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Experiencia
+          </a>
+        
+        
+      
+        
+          
+          <a href="/es/#technical" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Tech Stack
+          </a>
+        
+        
+      
+        
+          
+          <a href="/es/#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Contacto
+          </a>
+        
+        
+      
+        
+          
+          <a href="/es/engineering/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Ingeniería
+          </a>
+        
+        
+      
+        
+          
+          <a href="/es/contributions/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Contribuciones
+          </a>
+        
+        
+      
+        
+          
+          <a href="/es/blog/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Blog
+          </a>
+        
+        
+      
+      
+      
+      
+      <div class="px-3 py-2 border-t border-border-primary dark:border-border-primary">
+        <div class="flex items-center space-x-3">
+          
+          
+            
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                  
+                    
+                    
+                  
+                
+              
+              
+              <a href="/blog/thesis-structural-engineering-innovation/" class="px-2 py-1 text-xl opacity-70 hover:opacity-100" aria-label="Switch to English (has translation)">
+                <span aria-hidden="true">🇬🇧</span>
+              </a>
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                  
+                
+              
+              
+              <a href="/es/" class="px-2 py-1 text-xl opacity-100 font-semibold" aria-label="Switch to Español (go to home)">
+                <span aria-hidden="true">🇪🇸</span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+
+      
+      <div class="flex items-center space-x-6 px-3 py-3 border-t border-border-primary dark:border-border-primary mt-2" data-animation="social">
+        <a href="https://www.linkedin.com/in/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+    .group.open .submenu {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
+
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Navigation script loaded');
+      
+      const sectionLinks = document.querySelectorAll('.section-link');
+      console.log('Found section links:', sectionLinks.length);
+      const homePath = '\/es\/';
+      
+      sectionLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          console.log('Section link clicked:', this.getAttribute('data-section'));
+          
+          const section = this.getAttribute('data-section');
+          const isHomePage = window.location.pathname === homePath || window.location.pathname === homePath + 'index.html' || window.location.pathname === homePath.replace(/\/$/, '');
+          console.log('Is home page:', isHomePage);
+          
+          if (isHomePage) {
+            
+            const targetElement = document.querySelector(section);
+            console.log('Target element found:', !!targetElement);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }
+          } else {
+            
+            console.log('Navigating to:', homePath + section);
+            window.location.href = homePath + section;
+          }
+        });
+      });
+      
+      
+      function handleHashScroll() {
+        console.log('Checking for hash:', window.location.hash);
+        if (window.location.hash) {
+          const targetElement = document.querySelector(window.location.hash);
+          console.log('Hash target element found:', !!targetElement);
+          if (targetElement) {
+            
+            setTimeout(() => {
+              console.log('Scrolling to hash target');
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }, 100);
+          }
+        }
+      }
+      
+      
+      handleHashScroll();
+      
+      
+      setTimeout(handleHashScroll, 500);
+      setTimeout(handleHashScroll, 1000);
+      
+      
+      window.addEventListener('hashchange', function() {
+        console.log('Hash changed to:', window.location.hash);
+        handleHashScroll();
+      });
+      
+      
+      window.addEventListener('load', function() {
+        console.log('Window loaded, checking hash');
+        setTimeout(handleHashScroll, 200);
+      });
+    });
+    
+    
+    document.querySelectorAll('.group > a.nav-link, .group > button.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const group = this.closest('.group');
+        const isOpen = group.classList.contains('open');
+
+        
+        document.querySelectorAll('.group').forEach(g => g.classList.remove('open'));
+
+        
+        if (!isOpen) {
+          group.classList.add('open');
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        const group = link.closest('.group');
+        if (!group.contains(event.target)) {
+          group.classList.remove('open');
+        }
+      });
+    });
+
+    
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    document.getElementById('darkModeToggleMobile').addEventListener('click', toggleDarkMode);
+
+    
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+
+  </script>
+</nav>
+
+
+
+
+    <div class="w-full h-16"></div>
+
+    <main class="flex-grow">
+        
+<section class="pt-8 pb-12 bg-bg dark:bg-bg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      
+      <div class="lg:w-2/3">
+        <h1 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">Seismic Performance of Reinforced Concrete Wall Structures: A Comprehensive Study</h1>
+        
+        <div class="text-center text-text-secondary dark:text-text-secondary mb-8">
+          <time datetime="2025-06-28">June 28, 2025</time>
+        </div>
+        
+        <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray [&_iframe]:min-h-[600px] [&_iframe]:w-full [&_img+em]:block [&_img+em]:text-center [&_img+em]:font-bold">
+          <p>My thesis research focused on a critical aspect of structural engineering that directly impacts the safety of millions of people: the seismic performance of reinforced concrete (RC) wall structures commonly found in Chile. This comprehensive study utilized advanced computational methods to understand how these structures behave under earthquake loads and identify key factors that influence their performance.</p>
+<p>For those interested in the complete technical details, the full thesis document is available for download <a href="/files/thesis/Thesis%20Felipe%20Cordero_ESP_original_version.pdf" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="observed-earthquake-damage">Observed Earthquake Damage</h2>
+<p>Understanding the real damage observed in Chilean buildings after major earthquakes was a key motivation for this research. The following images show typical damage patterns at wall ends without special confinement, as seen in buildings in Macul and Ñuñoa. These observations highlight the need for improved design and analysis methods for reinforced concrete wall structures in seismic regions.</p>
+<figure><img src="/images/thesis/observed_damage_macul_nunoa.png"
+    alt="Observed Damage in Macul and Ñuñoa" width="600"><figcaption>
+      <p>Fig. 2.6 &amp; 2.7: Observed damage in buildings in Macul and Ñuñoa after the earthquake. Damage is concentrated at wall ends without special confinement.</p>
+    </figcaption>
+</figure>
+
+<h2 id="the-research-context">The Research Context</h2>
+<p>Chile is one of the most seismically active countries in the world, making the study of structural behavior under earthquake loads particularly relevant. My research examined the performance of RC wall structures that are prevalent in Chilean construction, particularly those built between 1996-2006 with 15 stories or more.</p>
+<h2 id="structural-typologies-studied">Structural Typologies Studied</h2>
+<p>The research focused on two main structural configurations commonly found in Chilean buildings:</p>
+<figure><img src="/images/thesis/Building_structures.png"
+    alt="Structural Models: Structure A and B" width="600"><figcaption>
+      <p>Fig. 4.1: Structural models analyzed in the study. (a) Structure A, (b) Structure B.</p>
+    </figcaption>
+</figure>
+
+<h3 id="typical-building-characteristics">Typical Building Characteristics</h3>
+<ul>
+<li><strong>Layout</strong>: Regular rectangular structures with aspect ratios between 2:1 and 3:1</li>
+<li><strong>Wall Distribution</strong>: Long, continuous walls in the longer direction; rectangular and T-shaped walls in the shorter direction</li>
+<li><strong>Wall Thicknesses</strong>: Primarily 20 cm (60% of cases) and 25 cm (17%)</li>
+<li><strong>Wall Lengths</strong>: Ranging from 50 cm to 650 cm</li>
+<li><strong>Floor Heights</strong>: Between 2.5 m and 3.2 m</li>
+</ul>
+<h3 id="material-properties">Material Properties</h3>
+<ul>
+<li><strong>Concrete</strong>: H30 grade (f&rsquo;c = 25 MPa)</li>
+<li><strong>Steel</strong>: A63-42H grade (fy = 420 MPa)</li>
+<li><strong>Reinforcement</strong>: Meshes varying from φ8 mm at 25 cm to φ12 mm at 17 cm</li>
+</ul>
+<h2 id="advanced-computational-modeling">Advanced Computational Modeling</h2>
+<p>The research employed sophisticated computational techniques to accurately simulate structural behavior using OpenSees software:</p>
+<h3 id="fiber-model-implementation">Fiber Model Implementation</h3>
+<ul>
+<li><strong>Cross-section Discretization</strong>: Concrete modeled as rectangular fibers, steel reinforcement as concentrated fibers</li>
+<li><strong>Material Characterization</strong>: Advanced constitutive models for both concrete and steel</li>
+<li><strong>Validation</strong>: Rigorous comparison with experimental data from existing literature</li>
+</ul>
+<h2 id="technical-tools-and-software-stack">Technical Tools and Software Stack</h2>
+<p>This research project required a comprehensive set of computational tools and software to handle the complex numerical analyses and data processing:</p>
+<h3 id="primary-analysis-software">Primary Analysis Software</h3>
+<ul>
+<li><strong>OpenSees</strong>: The core analysis platform for nonlinear structural analysis and fiber modeling</li>
+<li><strong>MATLAB</strong>: Used for data processing, post-processing of results, and creating custom analysis scripts</li>
+<li><strong>Python</strong>: Employed for automation of analysis workflows, data visualization, and batch processing of multiple analyses</li>
+</ul>
+<h3 id="documentation-and-presentation">Documentation and Presentation</h3>
+<ul>
+<li><strong>LaTeX</strong>: Complete thesis document preparation with professional mathematical notation and formatting</li>
+<li><strong>Python (Matplotlib/Plotly)</strong>: Advanced plotting and visualization of structural response data</li>
+<li><strong>MATLAB</strong>: Additional plotting capabilities for time-history analysis results</li>
+</ul>
+<h3 id="computational-workflow">Computational Workflow</h3>
+<p>The research involved a sophisticated computational pipeline:</p>
+<ol>
+<li><strong>Model Development</strong>: OpenSees for structural modeling and fiber element implementation</li>
+<li><strong>Data Processing</strong>: MATLAB and Python for processing raw analysis results</li>
+<li><strong>Visualization</strong>: Python and MATLAB for creating publication-quality figures</li>
+<li><strong>Documentation</strong>: LaTeX for professional thesis formatting and mathematical equations</li>
+<li><strong>Automation</strong>: Python scripts for batch processing multiple analysis cases</li>
+</ol>
+<p>This multi-tool approach allowed for efficient handling of the complex parametric studies and ensured robust, reproducible results across hundreds of analysis cases.</p>
+<h3 id="material-models">Material Models</h3>
+<p><strong>Steel Modeling:</strong></p>
+<ul>
+<li><strong>Steel02 Model</strong>: For general steel behavior with yield strength, elastic modulus, and strain hardening</li>
+<li><strong>ReinforcingSteel Model</strong>: Based on Chang and Mander (1994), incorporating bar buckling effects</li>
+<li><strong>Buckling Parameters</strong>: Using &ldquo;Gomes and Appleton&rdquo; parameters for longitudinal bar buckling</li>
+</ul>
+<p><strong>Concrete Modeling:</strong></p>
+<ul>
+<li><strong>Concrete02 Model</strong>: Incorporating both compression and tension capacity</li>
+<li><strong>Confinement Effects</strong>: Calculating confined concrete strength using effective confinement pressure</li>
+<li><strong>Fracture Energy</strong>: Defining post-peak behavior for both confined and unconfined concrete</li>
+</ul>
+<h2 id="model-validation">Model Validation</h2>
+<p>The computational models were rigorously validated against experimental data:</p>
+<h3 id="test-specimens">Test Specimens</h3>
+<ul>
+<li><strong>RW2 (Rectangular Wall 2)</strong>: Used for calibration and validation</li>
+<li><strong>TW2 (T-shaped Wall 2)</strong>: Primary focus for detailed analysis</li>
+</ul>
+<h3 id="validation-results">Validation Results</h3>
+<ul>
+<li><strong>Global Response</strong>: Good agreement with experimental drift vs. basal shear data</li>
+<li><strong>Capacity Prediction</strong>: Model predicted higher shear capacity when web was in compression (~10% higher)</li>
+<li><strong>Deformation Patterns</strong>: Captured the relationship between tensile and compressive deformations</li>
+</ul>
+<h2 id="comprehensive-parametric-study">Comprehensive Parametric Study</h2>
+<p>The research conducted extensive parametric studies to understand the influence of various design parameters:</p>
+<ul>
+<li><strong>Variation of number of stories</strong></li>
+<li><strong>Variation of axial load and edge confinement</strong></li>
+<li><strong>Length of confined zone</strong></li>
+<li><strong>Foundation type and perimeter wall thickness</strong></li>
+<li><strong>Different seismic records</strong></li>
+</ul>
+<h3 id="1-confinement-effects">1. Confinement Effects</h3>
+<ul>
+<li><strong>Impact</strong>: Confinement significantly improves lateral load capacity and ductility</li>
+<li><strong>Finding</strong>: Unconfined concrete leads to more brittle response</li>
+<li><strong>Application</strong>: Critical for design decisions in high-seismic regions</li>
+</ul>
+<h3 id="2-concrete-quality-variation">2. Concrete Quality Variation</h3>
+<ul>
+<li><strong>Study</strong>: Decreasing f&rsquo;c by 30%</li>
+<li><strong>Result</strong>: Reduced lateral load capacity but maintained ductility</li>
+<li><strong>Implication</strong>: Material degradation doesn&rsquo;t necessarily compromise structural ductility</li>
+</ul>
+<h3 id="3-longitudinal-bar-buckling">3. Longitudinal Bar Buckling</h3>
+<ul>
+<li><strong>Modeling</strong>: Incorporating buckling effects between stirrups</li>
+<li><strong>Impact</strong>: Affects load-displacement response and deformation capacity</li>
+<li><strong>Significance</strong>: Critical for understanding post-peak behavior</li>
+</ul>
+<h3 id="4-axial-load-effects">4. Axial Load Effects</h3>
+<ul>
+<li><strong>Range Studied</strong>: 0.075 f&rsquo;c·Ag to 0.3 f&rsquo;c·Ag</li>
+<li><strong>Findings</strong>:
+<ul>
+<li>Higher axial loads increase lateral force capacity</li>
+<li>Rapid reduction in ductility with increasing axial load</li>
+<li>At 0.3 f&rsquo;c·Ag, structures become brittle with &ldquo;violent decay of capacity&rdquo;</li>
+</ul>
+</li>
+<li><strong>Practical Implication</strong>: Critical balance between strength and ductility</li>
+</ul>
+<figure><img src="/images/thesis/seismic_registries.png"
+    alt="Seismic Registries" width="600"><figcaption>
+      <p>Fig. 4.5: Registros considerados. Seismic acceleration records used in the study for Concepción, Maipú, Viña del Mar, and Santiago Centro.</p>
+    </figcaption>
+</figure>
+
+<h3 id="5-confinement-zone-length">5. Confinement Zone Length</h3>
+<ul>
+<li><strong>Variations</strong>: 15%, 30%, 50% of web length</li>
+<li><strong>Result</strong>: Longer confined zones improve ductility and capacity</li>
+<li><strong>Design Impact</strong>: Important consideration for structural detailing</li>
+</ul>
+<h2 id="time-history-analysis-of-full-structures">Time-History Analysis of Full Structures</h2>
+<p>The research extended beyond component-level analysis to full structural systems:</p>
+<h3 id="analyzed-structures">Analyzed Structures</h3>
+<ul>
+<li><strong>Structure A</strong>: Four different transverse sections in T-shaped walls</li>
+<li><strong>Structure B</strong>: Alternative structural configuration</li>
+<li><strong>Modeling</strong>: Perimeter walls as linear elastic, slabs as elasto-plastic elements</li>
+</ul>
+<h3 id="seismic-records-used">Seismic Records Used</h3>
+<ul>
+<li>Concepción EO</li>
+<li>Maipu</li>
+<li>Santiago Centro</li>
+<li>Viña del Mar</li>
+</ul>
+<h2 id="key-findings-and-implications">Key Findings and Implications</h2>
+<h3 id="structure-a-moments-and-moment-curvature-results">Structure A: Moments and Moment-Curvature Results</h3>
+<figure><img src="/images/thesis/structureA_moments_curvature.png"
+    alt="Structure A Moments and Moment-Curvature" width="600"><figcaption>
+      <p>Fig. 5.1 &amp; 5.2: Structure A. Moments at each story over time and moment-curvature plots for wall sections.</p>
+    </figcaption>
+</figure>
+
+<h3 id="structure-a-variable-axial-load-with-confinement">Structure A: Variable Axial Load with Confinement</h3>
+<figure><img src="/images/thesis/Structure%20A-Variable%20Axial%20Load-With%20Confinement.png"
+    alt="Structure A Variable Axial Load With Confinement" width="700"><figcaption>
+      <p>Fig. 5.21: Structure A. Variation of axial load with ACI-equivalent confinement. Shear, moment, unit deformation, and roof drift results.</p>
+    </figcaption>
+</figure>
+
+<h3 id="1-shear-vs-flexural-behavior">1. Shear vs. Flexural Behavior</h3>
+<p><strong>Critical Finding</strong>: For the analyzed structures, shear capacity was generally not exceeded, indicating that flexural behavior and associated deformations were the primary concerns for damage.</p>
+<h3 id="2-foundation-effects">2. Foundation Effects</h3>
+<ul>
+<li><strong>Rigid vs. Flexible Foundations</strong>: Significant differences in structural response</li>
+<li><strong>Perimeter Wall Interaction</strong>: Crucial for accurate modeling</li>
+<li><strong>Thickness Effects</strong>: Larger perimeter wall thickness reduces maximum drifts but also reduces flexibility</li>
+</ul>
+<h3 id="3-height-effects">3. Height Effects</h3>
+<ul>
+<li><strong>Multi-story Analysis</strong>: 10, 15, 20, and 25-story variations</li>
+<li><strong>Dynamic Response</strong>: Spectral comparisons show how building height affects response</li>
+<li><strong>Design Implications</strong>: Height-specific considerations needed</li>
+</ul>
+<h3 id="4-seismic-record-sensitivity">4. Seismic Record Sensitivity</h3>
+<ul>
+<li><strong>Response Variation</strong>: Significant differences based on acceleration record</li>
+<li><strong>Confinement Benefits</strong>: More controlled response with proper confinement across different records</li>
+</ul>
+<h2 id="practical-applications">Practical Applications</h2>
+<p>The research findings have direct implications for:</p>
+<h3 id="1-design-practice">1. Design Practice</h3>
+<ul>
+<li><strong>Confinement Requirements</strong>: Optimal confinement zone lengths for different axial loads</li>
+<li><strong>Axial Load Limits</strong>: Balancing strength and ductility requirements</li>
+<li><strong>Foundation Modeling</strong>: Importance of accurate foundation representation</li>
+</ul>
+<h3 id="2-code-development">2. Code Development</h3>
+<ul>
+<li><strong>Seismic Provisions</strong>: Evidence-based recommendations for Chilean building codes</li>
+<li><strong>Material Requirements</strong>: Concrete and steel specifications for seismic regions</li>
+<li><strong>Detailing Requirements</strong>: Reinforcement detailing for improved performance</li>
+</ul>
+<h3 id="3-construction-industry">3. Construction Industry</h3>
+<ul>
+<li><strong>Quality Control</strong>: Material and construction quality requirements</li>
+<li><strong>Inspection Guidelines</strong>: Critical areas for structural inspection</li>
+<li><strong>Retrofit Strategies</strong>: Identifying vulnerable structures and improvement methods</li>
+</ul>
+<h2 id="academic-and-professional-impact">Academic and Professional Impact</h2>
+<p>This research contributed to:</p>
+<ul>
+<li><strong>Scientific Literature</strong>: Advanced understanding of RC wall behavior under seismic loads</li>
+<li><strong>Engineering Practice</strong>: Practical guidelines for design and construction</li>
+<li><strong>Code Development</strong>: Evidence-based recommendations for seismic design</li>
+<li><strong>Educational Programs</strong>: Enhanced teaching materials for earthquake engineering</li>
+</ul>
+<h2 id="future-research-directions">Future Research Directions</h2>
+<p>The thesis opened several avenues for continued research:</p>
+<ul>
+<li><strong>Advanced Material Models</strong>: Further refinement of constitutive relationships</li>
+<li><strong>3D Modeling</strong>: Extension to full three-dimensional structural analysis</li>
+<li><strong>Performance-Based Design</strong>: Development of performance criteria for different hazard levels</li>
+<li><strong>Retrofit Strategies</strong>: Application of findings to existing building assessment</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This thesis represents a comprehensive investigation into the seismic performance of reinforced concrete wall structures, combining advanced computational methods with practical engineering applications. The research not only advanced the understanding of structural behavior under seismic loads but also provided practical guidance for the design and construction of safer buildings in seismically active regions.</p>
+<p>The findings emphasize the critical importance of proper confinement, axial load management, and foundation modeling in achieving ductile structural behavior during earthquakes. These insights continue to influence my approach to structural engineering and inform my work in developing safer, more resilient structures.</p>
+<p>This research represents not just an academic achievement, but a contribution to the safety and resilience of communities in seismically active regions worldwide.</p>
+
+        </div>
+      </div>
+
+      
+      
+      <div class="lg:w-1/3">
+        <div class="sticky top-24 max-h-[calc(100vh-8rem)] flex flex-col">
+          <h2 class="text-xl font-bold mb-4 text-text-primary dark:text-text-primary flex-shrink-0">Contenido relacionado</h2>
+          <div class="space-y-3 pr-2 overflow-y-auto flex-1 sidebar-scroll">
+            
+            
+            <a href="/es/engineering/real-time-slab-deflection-analysis/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/blog/2025-05-18_21-09%20-%20obralink_slabs%20.png" 
+                        alt="Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Exploring the development of an automated real-time slab deflection analysis tool that combines BIM data with structural engineering principles.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    bim
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    python
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/es/blog/real-time-slab-deflection-analysis/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/blog/2025-05-18_21-09%20-%20obralink_slabs%20.png" 
+                        alt="Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Exploring the development of an automated real-time slab deflection analysis tool that combines BIM data with structural engineering principles.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    bim
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    python
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/es/engineering/concrete_beam_designer/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/beams_demo_image.png" 
+                        alt="Concrete Beam Designer" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Concrete Beam Designer
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Una aplicación web moderna para análisis y diseño de vigas de concreto, con análisis de cargas, configuraciones de apoyo y visualizaciones interactivas.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    concrete-design
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/es/engineering/etabs_postprocessor/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/album_etabs/animation.gif" 
+                        alt="ETABS Post-Processor" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      ETABS Post-Processor
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Interfaz gráfica de alto nivel para bases de datos ETABS que permite verificación de salud estructural, verificación de fuerzas, diseño de refuerzo y generación automática de reportes.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    etabs
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/es/engineering/concrete_sections/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/album_sections/demo.png" 
+                        alt="Reinforced Concrete Walls Sectional Analysis" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Reinforced Concrete Walls Sectional Analysis
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Programa avanzado para análisis preciso de secciones de muros compuestos con diagramas de interacción 3D, modificación de refuerzo y análisis momento-curvatura.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    concrete-design
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/es/engineering/retaining_walls/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/album_retain_walls/demo.png" 
+                        alt="Retaining Walls Designer" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Retaining Walls Designer
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Aplicación web moderna para diseño y análisis de muros de contención de concreto en voladizo, con definición de parámetros, dimensionamiento, diseño de refuerzo y visualización interactiva.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    retaining-walls
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/es/engineering/structural_design/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/album_modeling/modelo1-557x700.png" 
+                        alt="Structural Design" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Structural Design
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Servicios profesionales de diseño estructural para proyectos residenciales, industriales e infraestructura utilizando herramientas avanzadas como ETABS, SAFE, SAP2000 y OpenSees.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    etabs
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="bg-bg-secondary dark:bg-bg-secondary text-text-primary py-12 border-t border-border-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <a href="/#home" class="text-xl font-bold text-text-primary font-heading">Deijany Rodriguez-Linares</a>
+        
+        
+        <p class="text-text-secondary dark:text-text-muted mt-1">
+          <i class="fas fa-map-marker-alt mr-2"></i>Montreal, Canadá
+        </p>
+        <a href="mailto:deijany.rodriguez.linares@liu.se" class="text-text-secondary dark:text-text-muted text-primary dark:text-primary-light mt-1 inline-block">
+          <i class="fas fa-envelope mr-2"></i>deijany.rodriguez.linares@liu.se
+        </a>
+        <div class="flex space-x-8 mt-6" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/deijany/" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+          <a href="https://github.com/deijany" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <div class="flex flex-wrap gap-2 justify-end">
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Soluciones de IA/ML</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Software de Ingeniería</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">I&#43;D e Innovación</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Liderazgo Técnico</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Tecnología en Construcción</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-border-primary text-center text-text-secondary dark:text-text-muted text-sm">
+      <p>© 2026 | Deijany Rodriguez Linares</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+<script>
+  
+  window.HUGO_COLOR_PALETTES = [
+    
+    {
+      name: "professional",
+      main_color: "#474A51",
+      second_color: "#E52521",
+      third_color: "#3CB043"
+    },
+    
+    {
+      name: "ocean",
+      main_color: "#1E40AF",
+      second_color: "#06B6D4",
+      third_color: "#10B981"
+    },
+    
+    {
+      name: "steel",
+      main_color: "#374151",
+      second_color: "#6B7280",
+      third_color: "#10B981"
+    },
+    
+    {
+      name: "navy",
+      main_color: "#1E3A8A",
+      second_color: "#3B82F6",
+      third_color: "#F59E0B"
+    },
+    
+    {
+      name: "slate",
+      main_color: "#475569",
+      second_color: "#0EA5E9",
+      third_color: "#F97316"
+    },
+    
+    {
+      name: "midnight",
+      main_color: "#0F172A",
+      second_color: "#8B5CF6",
+      third_color: "#06B6D4"
+    }
+    
+  ];
+  
+  
+  if (window.HUGO_COLOR_PALETTES && window.HUGO_COLOR_PALETTES.length > 0) {
+    console.log('🎨 Using color palettes from Hugo config:', window.HUGO_COLOR_PALETTES.length, 'palettes');
+  }
+</script>
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/dynamic-colors.js"></script>
+    <script src="/js/gsap-animations.js"></script>
+    <script src="/js/pexels-background.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        
+        window.addEventListener('load', function() {
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+</body>
+</html>

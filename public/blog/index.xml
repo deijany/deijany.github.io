@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Deijany RL</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on Deijany RL</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Seismic Performance of Reinforced Concrete Wall Structures: A Comprehensive Study</title>
+      <link>http://localhost:1313/blog/thesis-structural-engineering-innovation/</link>
+      <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/thesis-structural-engineering-innovation/</guid>
+      <description>&lt;p&gt;My thesis research focused on a critical aspect of structural engineering that directly impacts the safety of millions of people: the seismic performance of reinforced concrete (RC) wall structures commonly found in Chile. This comprehensive study utilized advanced computational methods to understand how these structures behave under earthquake loads and identify key factors that influence their performance.&lt;/p&gt;&#xA;&lt;p&gt;For those interested in the complete technical details, the full thesis document is available for download &lt;a href=&#34;http://localhost:1313/files/thesis/Thesis%20Felipe%20Cordero_ESP_original_version.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Math Book to App: A Father-Son Coding Adventure</title>
+      <link>http://localhost:1313/blog/frommathbooktoappafather-soncodingadventure/</link>
+      <pubDate>Fri, 27 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/frommathbooktoappafather-soncodingadventure/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Vicente, want to see how we can make an app from these concepts?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;That simple question sparked something special. Today we were studying combinations in his math book. Instead of just working through the exercises, I thought—why not bring these ideas to life with code?&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/blog/mathbook/maths.jpeg&#34;&#xA;    alt=&#34;Recognition Letter&#34; width=&#34;700&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;The app&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;What followed was a father-son journey, transforming abstract math into something interactive and fun! We built an app that visualizes combinations as colorful trees, letting Vicente see patterns grow in real time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Academic Excellence Recognition: A Journey of Faith and Perseverance</title>
+      <link>http://localhost:1313/blog/academic-excellence-recognition/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/academic-excellence-recognition/</guid>
+      <description>&lt;p&gt;Receiving recognition for academic excellence from Air Canada during my graduation from the Artificial Intelligence and Machine Learning program at Collège LaSalle, Montréal has been an unforgettable and deeply emotional moment. This achievement represents not just academic success, but a testament to faith, family support, and perseverance.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/beca_lasalle/scholarship_letter.jpg&#34;&#xA;    alt=&#34;Recognition Letter&#34; width=&#34;400&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;The recognition letter from Air Canada - A testament to hard work and dedication&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2 id=&#34;the-journey&#34;&gt;The Journey&lt;/h2&gt;&#xA;&lt;p&gt;The path to this recognition has been anything but easy. After years in the professional world, returning to formal education presented its own set of challenges. However, the decision to leave Chile nearly two years ago—leaving behind our families, friends, and everything familiar to start a new chapter in Canada—added another layer of complexity to this journey.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introducing CareerCanvas: A Modern Hugo Theme for Technical Portfolios</title>
+      <link>http://localhost:1313/blog/careercanvas-hugo-theme/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/careercanvas-hugo-theme/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m excited to announce the release of CareerCanvas, a modern and responsive Hugo theme designed specifically for technical professionals and engineers. This theme aims to provide a clean, elegant way to showcase your professional experience, skills, and projects.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/blog/career_canvas_demo.png&#34; alt=&#34;CareerCanvas Theme Preview&#34;&gt;&#xA;&lt;em&gt;CareerCanvas in action - A clean, modern interface for technical portfolios&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;key-features&#34;&gt;Key Features&lt;/h2&gt;&#xA;&lt;p&gt;CareerCanvas comes packed with features that make it perfect for technical portfolios:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Modern Design&lt;/strong&gt;: A clean, responsive layout that works beautifully on all devices&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dark Mode Support&lt;/strong&gt;: Built-in dark mode for comfortable viewing in any lighting condition&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Portfolio Showcase&lt;/strong&gt;: Dedicated sections for projects with image galleries&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Blog Support&lt;/strong&gt;: Integrated blog functionality for sharing your thoughts and experiences&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Skills Section&lt;/strong&gt;: Interactive cards to highlight your technical expertise&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Experience Timeline&lt;/strong&gt;: A visually appealing way to present your professional journey&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Contact Form&lt;/strong&gt;: Easy way for potential employers or collaborators to reach out&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Social Media Integration&lt;/strong&gt;: Seamless connection with your professional networks&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Multilingual Support&lt;/strong&gt;: Currently supports English and French&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resume/CV Integration&lt;/strong&gt;: Direct links to downloadable resumes&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Tailwind CSS&lt;/strong&gt;: Modern styling with utility-first CSS framework&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-stack&#34;&gt;Technical Stack&lt;/h2&gt;&#xA;&lt;p&gt;The theme is built with modern web technologies:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering</title>
+      <link>http://localhost:1313/blog/real-time-slab-deflection-analysis/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/real-time-slab-deflection-analysis/</guid>
+      <description>&lt;p&gt;🔧 Real-time information about slab deflections during construction? Yes, it&amp;rsquo;s possible—and I developed it! At &lt;a href=&#34;https://obralink.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ObraLink&lt;/a&gt;, I led the design and implementation of a new functionality that automatically analyzes slab deflections in real-time using BIM data and sensors. No manual modeling. No delays. Just key structural information, precisely when needed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;video-demonstration&#34;&gt;Video Demonstration&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;div class=&#34;aspect-video w-full my-4&#34;&gt;&#xA;  &lt;iframe&#xA;    src=&#34;https://www.youtube.com/embed/5wn4zLR0ceU?rel=0&#34;&#xA;    class=&#34;w-full h-full&#34;&#xA;    title=&#34;YouTube video player&#34;&#xA;    frameborder=&#34;0&#34;&#xA;    allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34;&#xA;    allowfullscreen&#xA;    style=&#34;border:0;&#34;&#xA;  &gt;&lt;/iframe&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;em&gt;Real-time slab deflection analysis in action - Watch how the tool automatically processes BIM data and provides instant structural insights&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to My Blog</title>
+      <link>http://localhost:1313/blog/welcome-to-my-blog/</link>
+      <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/welcome-to-my-blog/</guid>
+      <description>&lt;p&gt;Welcome to my blog! I&amp;rsquo;m excited to share my journey of creating this website and the experiences that led me here. As a structural engineer with a passion for software development, I wanted a platform that could effectively showcase both my technical expertise and professional experience.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-this-website&#34;&gt;Why This Website?&lt;/h2&gt;&#xA;&lt;p&gt;After exploring various options, I chose to build this site using Hugo, a powerful static site generator, and created my own theme called CareerCanvas. This decision was driven by several factors:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

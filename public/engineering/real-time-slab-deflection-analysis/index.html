@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+    <script>
+  window.PEXELS_API_KEY = "K5NOC1xEcfltFMyFONDScBzJgXCW6KXDS9bVU4xlaNUTsIxSsQabZp7p";
+  window.PEXELS_QUERIES = "[\"signal processing\",\"wireless communications\",\"5g base station\"]";
+</script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<title>
+  
+    Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering | Deijany RL
+  
+</title>
+
+
+<meta name="description" content="Exploring the development of an automated real-time slab deflection analysis tool that combines BIM data with structural engineering principles." />
+<meta name="author" content="Deijany Rodriguez Linares" />
+<link rel="canonical" href="http://localhost:1313/engineering/real-time-slab-deflection-analysis/" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering | Deijany RL" />
+<meta property="og:description" content="Exploring the development of an automated real-time slab deflection analysis tool that combines BIM data with structural engineering principles." />
+<meta property="og:url" content="http://localhost:1313/engineering/real-time-slab-deflection-analysis/" />
+<meta property="og:image" content="http://localhost:1313/images/face5.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Deijany RL" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering | Deijany RL" />
+<meta name="twitter:description" content="Exploring the development of an automated real-time slab deflection analysis tool that combines BIM data with structural engineering principles." />
+<meta name="twitter:image" content="http://localhost:1313/images/face5.jpg" />
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+
+    
+    
+    <style>
+ 
+:root {
+   
+  
+  
+  --color-primary: #474A51;
+  --color-second: #E52521;
+  --color-third: #3CB043;
+  
+  
+   
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 80%, white);
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-primary-lighter: color-mix(in srgb, var(--color-primary) 20%, white);
+  
+  --color-second-light: color-mix(in srgb, var(--color-second) 80%, white);
+  --color-second-dark: color-mix(in srgb, var(--color-second) 80%, black);
+  --color-second-lighter: color-mix(in srgb, var(--color-second) 20%, white);
+  
+  --color-third-light: color-mix(in srgb, var(--color-third) 80%, white);
+  --color-third-dark: color-mix(in srgb, var(--color-third) 80%, black);
+  --color-third-lighter: color-mix(in srgb, var(--color-third) 20%, white);
+  
+   
+  --color-gray-50: color-mix(in srgb, var(--color-primary) 5%, white);
+  --color-gray-100: color-mix(in srgb, var(--color-primary) 10%, white);
+  --color-gray-300: color-mix(in srgb, var(--color-primary) 20%, white);
+  --color-gray-400: color-mix(in srgb, var(--color-primary) 30%, white);
+  --color-gray-500: color-mix(in srgb, var(--color-primary) 40%, white);
+  --color-gray-600: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-gray-700: color-mix(in srgb, var(--color-primary) 60%, black);
+  --color-gray-800: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-gray-900: color-mix(in srgb, var(--color-primary) 90%, black);
+  
+   
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+   
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-lighter: rgba(0, 0, 0, 0.05);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  
+   
+  --color-text-muted: var(--color-gray-500);
+  --color-border-secondary: var(--color-gray-300);
+  --color-success: var(--color-second);
+  
+   
+  --color-bg: var(--color-white);
+  --color-bg-secondary: var(--color-gray-100);
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-700);
+  --color-border: var(--color-gray-300);
+}
+
+ 
+.dark {
+  --color-bg: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-bg-secondary: color-mix(in srgb, var(--color-primary) 30%, black);
+  --color-bg-tertiary: color-mix(in srgb, var(--color-primary) 40%, black);
+  --color-text-primary: var(--color-gray-50);
+  --color-text-secondary: var(--color-gray-300);
+  --color-border: var(--color-gray-700);
+  --color-text-muted: var(--color-gray-400);
+  --color-border-secondary: var(--color-gray-600);
+}
+</style>
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.css?v=1769890162" data-version="1769890162">
+    <style>
+         
+        body {
+            visibility: hidden;
+        }
+        .dark body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-bg dark:bg-bg text-text-primary dark:text-text-primary flex flex-col min-h-screen transition-colors duration-200">
+
+    <nav class="fixed w-full bg-bg dark:bg-bg shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-3xl font-bold text-text-primary dark:text-text-primary font-heading">Deijany R.L.</a>
+      </div>
+      <div class="hidden lg:flex items-center space-x-8">
+        
+          
+                      
+            
+            <a href="/#about" class="nav-link text-text-primary dark:text-text-primary">About</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#skills" class="nav-link text-text-primary dark:text-text-primary">Skills</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#experience" class="nav-link text-text-primary dark:text-text-primary">Experience</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#publications" class="nav-link text-text-primary dark:text-text-primary">Publications</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#awards" class="nav-link text-text-primary dark:text-text-primary">Awards</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#contact" class="nav-link text-text-primary dark:text-text-primary">Contact</a>
+          
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="relative group">
+          <a href="#" class="nav-link text-text-primary dark:text-text-primary flex items-center" aria-label="Language switcher">
+            <span class="text-lg mr-1">🇬🇧</span>
+            <i class="fas fa-chevron-down ml-1 text-sm"></i>
+          </a>
+          <div class="submenu absolute right-0 top-full mt-2 bg-bg dark:bg-bg shadow-lg rounded-lg z-50 min-w-[8rem] opacity-0 invisible">
+            
+            
+              
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                <a href="/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary font-semibold">
+                  <span class="mr-2">🇬🇧</span>English
+                </a>
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                
+                
+                <a href="/es/engineering/real-time-slab-deflection-analysis/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary ">
+                  <span class="mr-2">🇪🇸</span>Español
+                </a>
+              
+            
+          </div>
+        </div>
+        
+
+        
+        <div class="flex items-center space-x-4" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          
+          
+          <a href="https://github.com/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          
+        </div>
+        
+        <button id="darkModeToggle" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+      </div>
+      <div class="lg:hidden flex items-center space-x-4">
+        
+        <button id="darkModeToggleMobile" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+        <button id="menu-btn" class="text-text-primary dark:text-text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="mobile-menu" class="hidden lg:hidden bg-bg dark:bg-bg shadow-lg">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      
+        
+          
+          <a href="/#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            About
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Skills
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#experience" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Experience
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#publications" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Publications
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#awards" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Awards
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Contact
+          </a>
+        
+        
+      
+      
+      
+      
+      <div class="px-3 py-2 border-t border-border-primary dark:border-border-primary">
+        <div class="flex items-center space-x-3">
+          
+          
+            
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                  
+                
+              
+              
+              <a href="/" class="px-2 py-1 text-xl opacity-100 font-semibold" aria-label="Switch to English (go to home)">
+                <span aria-hidden="true">🇬🇧</span>
+              </a>
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                  
+                    
+                    
+                  
+                
+              
+              
+              <a href="/es/engineering/real-time-slab-deflection-analysis/" class="px-2 py-1 text-xl opacity-70 hover:opacity-100" aria-label="Switch to Español (has translation)">
+                <span aria-hidden="true">🇪🇸</span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+
+      
+      <div class="flex items-center space-x-6 px-3 py-3 border-t border-border-primary dark:border-border-primary mt-2" data-animation="social">
+        <a href="https://www.linkedin.com/in/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+    .group.open .submenu {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
+
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Navigation script loaded');
+      
+      const sectionLinks = document.querySelectorAll('.section-link');
+      console.log('Found section links:', sectionLinks.length);
+      const homePath = '\/';
+      
+      sectionLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          console.log('Section link clicked:', this.getAttribute('data-section'));
+          
+          const section = this.getAttribute('data-section');
+          const isHomePage = window.location.pathname === homePath || window.location.pathname === homePath + 'index.html' || window.location.pathname === homePath.replace(/\/$/, '');
+          console.log('Is home page:', isHomePage);
+          
+          if (isHomePage) {
+            
+            const targetElement = document.querySelector(section);
+            console.log('Target element found:', !!targetElement);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }
+          } else {
+            
+            console.log('Navigating to:', homePath + section);
+            window.location.href = homePath + section;
+          }
+        });
+      });
+      
+      
+      function handleHashScroll() {
+        console.log('Checking for hash:', window.location.hash);
+        if (window.location.hash) {
+          const targetElement = document.querySelector(window.location.hash);
+          console.log('Hash target element found:', !!targetElement);
+          if (targetElement) {
+            
+            setTimeout(() => {
+              console.log('Scrolling to hash target');
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }, 100);
+          }
+        }
+      }
+      
+      
+      handleHashScroll();
+      
+      
+      setTimeout(handleHashScroll, 500);
+      setTimeout(handleHashScroll, 1000);
+      
+      
+      window.addEventListener('hashchange', function() {
+        console.log('Hash changed to:', window.location.hash);
+        handleHashScroll();
+      });
+      
+      
+      window.addEventListener('load', function() {
+        console.log('Window loaded, checking hash');
+        setTimeout(handleHashScroll, 200);
+      });
+    });
+    
+    
+    document.querySelectorAll('.group > a.nav-link, .group > button.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const group = this.closest('.group');
+        const isOpen = group.classList.contains('open');
+
+        
+        document.querySelectorAll('.group').forEach(g => g.classList.remove('open'));
+
+        
+        if (!isOpen) {
+          group.classList.add('open');
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        const group = link.closest('.group');
+        if (!group.contains(event.target)) {
+          group.classList.remove('open');
+        }
+      });
+    });
+
+    
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    document.getElementById('darkModeToggleMobile').addEventListener('click', toggleDarkMode);
+
+    
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+
+  </script>
+</nav>
+
+
+
+
+    <div class="w-full h-16"></div>
+
+    <main class="flex-grow">
+        
+<section class="pt-8 pb-12 bg-bg dark:bg-bg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      
+      <div class="lg:w-2/3">
+        <h1 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering</h1>
+        
+        <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray [&_iframe]:min-h-[600px] [&_iframe]:w-full [&_img+em]:block [&_img+em]:text-center [&_img+em]:font-bold">
+          <p>🔧 Real-time information about slab deflections during construction? Yes, it&rsquo;s possible—and I developed it! At <a href="https://obralink.com" target="_blank" rel="noopener">ObraLink</a>, I led the design and implementation of a new functionality that automatically analyzes slab deflections in real-time using BIM data and sensors. No manual modeling. No delays. Just key structural information, precisely when needed.</p>
+<h2 id="video-demonstration">Video Demonstration</h2>
+<p>
+<div class="aspect-video w-full my-4">
+  <iframe
+    src="https://www.youtube.com/embed/5wn4zLR0ceU?rel=0"
+    class="w-full h-full"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    style="border:0;"
+  ></iframe>
+</div>
+
+
+<em>Real-time slab deflection analysis in action - Watch how the tool automatically processes BIM data and provides instant structural insights</em></p>
+<h2 id="the-innovation">The Innovation</h2>
+<p>This tool represents a significant advancement in construction technology, combining several cutting-edge features:</p>
+<ul>
+<li><strong>Automatic 3D Structural Model Generation</strong> from BIM data</li>
+<li><strong>Comprehensive Analysis</strong> with and without cracking considerations</li>
+<li><strong>Automatic Geometry Correction and Adjustment</strong></li>
+<li><strong>Python Library Implementation</strong> for automatic 3D structural mesh generation from BIM data</li>
+<li><strong>Interactive 2D/3D Visualizations</strong></li>
+<li><strong>Web-based Structural Parameter Configuration</strong></li>
+<li><strong>Real-time Data Integration</strong></li>
+<li><strong>Complete Calculation Process Documentation</strong></li>
+</ul>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<p>The core of this innovation lies in its technical architecture:</p>
+<ol>
+<li>
+<p><strong>BIM Integration</strong></p>
+<ul>
+<li>Direct data extraction from BIM models</li>
+<li>Automated geometry processing</li>
+<li>Real-time data synchronization</li>
+</ul>
+</li>
+<li>
+<p><strong>Python Development</strong></p>
+<ul>
+<li>Custom library for structural mesh generation</li>
+<li>Automated processing pipeline</li>
+<li>Efficient data handling</li>
+</ul>
+</li>
+<li>
+<p><strong>Web Interface</strong></p>
+<ul>
+<li>User-friendly parameter configuration</li>
+<li>Interactive visualization tools</li>
+<li>Real-time monitoring capabilities</li>
+</ul>
+</li>
+</ol>
+<h2 id="impact-on-construction">Impact on Construction</h2>
+<p>This tool is set to revolutionize how construction teams handle structural monitoring:</p>
+<ul>
+<li><strong>Early Problem Detection</strong>: Anticipate structural issues before they become delays or cost overruns</li>
+<li><strong>Real-time Monitoring</strong>: Continuous assessment of structural behavior</li>
+<li><strong>Automated Analysis</strong>: Reduced manual intervention and potential for human error</li>
+<li><strong>Efficient Resource Management</strong>: Better decision-making based on real-time data</li>
+</ul>
+<h2 id="future-applications">Future Applications</h2>
+<p>The potential applications of this technology extend beyond slab deflection analysis:</p>
+<ul>
+<li><strong>Other Structural Elements</strong>: Beams, columns, and walls</li>
+<li><strong>Different Construction Phases</strong>: From planning to maintenance</li>
+<li><strong>Various Project Types</strong>: From residential to industrial construction</li>
+</ul>
+<h2 id="looking-forward">Looking Forward</h2>
+<p>I&rsquo;m currently open to new collaborations, helping teams create intelligent web applications with solid foundations in structural engineering and real-time data. If you&rsquo;re developing tools that merge structural engineering with web applications, I&rsquo;d be happy to support your process.</p>
+<h2 id="technical-details">Technical Details</h2>
+<p>The system architecture includes:</p>
+<ul>
+<li><strong>Frontend</strong>: Web-based interface for parameter configuration and visualization</li>
+<li><strong>Backend</strong>: Python-based processing engine</li>
+<li><strong>Data Pipeline</strong>: Real-time data integration from multiple sources</li>
+<li><strong>Analysis Engine</strong>: Structural calculations with automated mesh generation</li>
+<li><strong>Visualization Module</strong>: Interactive 2D/3D representations</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This development represents a significant step forward in construction technology, combining structural engineering expertise with modern software development practices. The ability to analyze structural behavior in real-time without manual intervention opens new possibilities for construction efficiency and safety.</p>
+<p>Would you like to learn more about this technology or explore potential collaborations? Feel free to reach out!</p>
+
+        </div>
+      </div>
+
+      
+      
+      <div class="lg:w-1/3">
+        <div class="sticky top-24 max-h-[calc(100vh-8rem)] flex flex-col">
+          <h2 class="text-xl font-bold mb-4 text-text-primary dark:text-text-primary flex-shrink-0">Related Content</h2>
+          <div class="space-y-3 pr-2 overflow-y-auto flex-1 sidebar-scroll">
+            
+            
+            <a href="/blog/real-time-slab-deflection-analysis/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/blog/2025-05-18_21-09%20-%20obralink_slabs%20.png" 
+                        alt="Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Exploring the development of an automated real-time slab deflection analysis tool that combines BIM data with structural engineering principles.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    bim
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    python
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/engineering/concrete_beam_designer/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/beams_demo_image.png" 
+                        alt="Concrete Beam Designer" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Concrete Beam Designer
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">A modern web application for concrete beam analysis and design, featuring load analysis, support configurations, and interactive visualizations.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    concrete-design
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/engineering/retaining_walls/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/album_retain_walls/demo.png" 
+                        alt="Retaining Walls Designer" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Retaining Walls Designer
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Modern web application for cantilever concrete retaining wall design and analysis, featuring parameter definition, dimensioning, reinforcement design, and interactive visualization.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    retaining-walls
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/engineering/etabs_postprocessor/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/album_etabs/animation.gif" 
+                        alt="ETABS Post-Processor" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      ETABS Post-Processor
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">High-level graphical interface for ETABS databases enabling structural health verification, force checking, reinforcement design, and automated report generation.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    etabs
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/engineering/concrete_sections/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/album_sections/demo.png" 
+                        alt="Reinforced Concrete Walls Sectional Analysis" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Reinforced Concrete Walls Sectional Analysis
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Advanced program for accurate analysis of composite wall sections with 3D interaction diagrams, reinforcement modification, and moment-curvature analysis.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    concrete-design
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/contributions/scheduler_student_services/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/scheduler_demo_image.gif" 
+                        alt="Scheduler Student Services" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Scheduler Student Services
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">A Streamlit app for managing student volunteers at Collège LaSalle Montréal, helping organize welcome teams for new students.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    education
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    student-services
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    streamlit
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+            <a href="/engineering/structural_design/" class="block group">
+              <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-md p-3 shadow-sm border border-border-primary dark:border-border-primary hover:shadow-md transition-shadow duration-200">
+                
+                <div class="flex gap-3 mb-2">
+                  
+                  <div class="w-16 flex-shrink-0">
+                    
+                    <div class="relative overflow-hidden">
+                      <img 
+                        src="/images/album_modeling/modelo1-557x700.png" 
+                        alt="Structural Design" 
+                        class="w-full h-16 object-contain bg-transparent transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                      >
+                      <div class="absolute inset-0 bg-gradient-to-t from-text-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  <div class="flex-1 min-w-0">
+                    <h3 class="text-sm font-semibold mb-1 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-300">
+                      Structural Design
+                    </h3>
+                    
+                    
+                    <p class="text-xs text-text-secondary dark:text-text-secondary leading-relaxed line-clamp-2">Professional structural design services for residential, industrial, and infrastructure projects using advanced software tools including ETABS, SAFE, SAP2000, and OpenSees.</p>
+                    
+                  </div>
+                </div>
+                
+                
+                
+                <div class="flex flex-wrap gap-1">
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    structural-engineering
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    design-tools
+                  </span>
+                  
+                  <span class="bg-bg dark:bg-bg-secondary text-text-primary dark:text-text-primary px-1.5 py-0.5 rounded text-xs border border-border-primary dark:border-border-primary">
+                    etabs
+                  </span>
+                  
+                </div>
+                
+              </article>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="bg-bg-secondary dark:bg-bg-secondary text-text-primary py-12 border-t border-border-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <a href="/#home" class="text-xl font-bold text-text-primary font-heading">Deijany Rodriguez-Linares</a>
+        
+        
+        <p class="text-text-secondary dark:text-text-muted mt-1">
+          <i class="fas fa-map-marker-alt mr-2"></i>Linköping, Sweden
+        </p>
+        <a href="mailto:deijany.rodriguez.linares@liu.se" class="text-text-secondary dark:text-text-muted text-primary dark:text-primary-light mt-1 inline-block">
+          <i class="fas fa-envelope mr-2"></i>deijany.rodriguez.linares@liu.se
+        </a>
+        <div class="flex space-x-8 mt-6" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/deijany/" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+          <a href="https://github.com/deijany" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <div class="flex flex-wrap gap-2 justify-end">
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Signal Processing</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Hardware-Aware Algorithms</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Beyond-5G Communications</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Linearization</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Synchronization</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-border-primary text-center text-text-secondary dark:text-text-muted text-sm">
+      <p>© 2026 | Deijany Rodriguez Linares</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+<script>
+  
+  window.HUGO_COLOR_PALETTES = [
+    
+    {
+      name: "professional",
+      main_color: "#474A51",
+      second_color: "#E52521",
+      third_color: "#3CB043"
+    },
+    
+    {
+      name: "ocean",
+      main_color: "#1E40AF",
+      second_color: "#06B6D4",
+      third_color: "#10B981"
+    },
+    
+    {
+      name: "steel",
+      main_color: "#374151",
+      second_color: "#6B7280",
+      third_color: "#10B981"
+    },
+    
+    {
+      name: "navy",
+      main_color: "#1E3A8A",
+      second_color: "#3B82F6",
+      third_color: "#F59E0B"
+    },
+    
+    {
+      name: "slate",
+      main_color: "#475569",
+      second_color: "#0EA5E9",
+      third_color: "#F97316"
+    },
+    
+    {
+      name: "midnight",
+      main_color: "#0F172A",
+      second_color: "#8B5CF6",
+      third_color: "#06B6D4"
+    }
+    
+  ];
+  
+  
+  if (window.HUGO_COLOR_PALETTES && window.HUGO_COLOR_PALETTES.length > 0) {
+    console.log('🎨 Using color palettes from Hugo config:', window.HUGO_COLOR_PALETTES.length, 'palettes');
+  }
+</script>
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/dynamic-colors.js"></script>
+    <script src="/js/gsap-animations.js"></script>
+    <script src="/js/pexels-background.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        
+        window.addEventListener('load', function() {
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+</body>
+</html>

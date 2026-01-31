@@ -1,0 +1,11 @@
+<section id="awards" class="py-12 border-t border-border-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ with .Site.GetPage "/awards" }}
+      <h2 class="text-3xl font-bold text-center mb-4 font-heading">{{ .Title }}</h2>
+      <p class="text-lg text-center mb-8 italic">{{ .Params.intro }}</p>
+      <div class="markdown-content max-w-3xl mx-auto">
+        {{ .Content | markdownify }}
+      </div>
+    {{ end }}
+  </div>
+</section>

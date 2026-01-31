@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome on Deijany RL</title>
+    <link>http://localhost:1313/es/tags/welcome/</link>
+    <description>Recent content in Welcome on Deijany RL</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Wed, 07 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to My Blog</title>
+      <link>http://localhost:1313/es/blog/welcome-to-my-blog/</link>
+      <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/welcome-to-my-blog/</guid>
+      <description>&lt;p&gt;Welcome to my blog! I&amp;rsquo;m excited to share my journey of creating this website and the experiences that led me here. As a structural engineer with a passion for software development, I wanted a platform that could effectively showcase both my technical expertise and professional experience.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-this-website&#34;&gt;Why This Website?&lt;/h2&gt;&#xA;&lt;p&gt;After exploring various options, I chose to build this site using Hugo, a powerful static site generator, and created my own theme called CareerCanvas. This decision was driven by several factors:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,15 @@
+/* shrink the hero section */
+.hero-section{
+  min-height: auto !important;      /* overrides min-h-screen if present */
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+/* reduce big typography spacing */
+.hero-name{ margin-bottom: 1rem !important; }
+.hero-section h1{ font-size: 3rem !important; line-height: 1.05 !important; }
+.hero-section h2{ font-size: 1.6rem !important; margin-bottom: 1rem !important; }
+.hero-section p{ margin-bottom: 1rem !important; }
+
+/* shrink image block */
+.hero-image{ max-width: 260px !important; }

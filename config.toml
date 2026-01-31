@@ -1,0 +1,232 @@
+# Hugo Site Configuration
+# This is the main configuration file for the Hugo site
+# 
+# SECURITY NOTE: Sensitive data (API keys, endpoints) are handled securely:
+# - Local development: Use config.local.toml (not committed to git)
+# - Production: Environment variables injected via GitHub Actions
+# - See comments below for setup instructions
+#
+baseURL = "https://deijany.github.io"
+languageCode = "en-us"
+title = "Deijany RL"
+theme = "careercanvas"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 1
+    [languages.en.params]
+      tagline = "Signal Processing,. Sampling frequency synchronization,. Linearization,. Equalization."
+      hero_description = "Ph.D. candidate in Communication Systems focusing on hardware-aware, low-complexity signal processing for modern wireless systems."
+      hero_location = "Linköping, Sweden"
+      collab_tags = [
+        "Signal Processing",
+        "Hardware-Aware Algorithms",
+        "Beyond-5G Communications",
+        "Linearization",
+        "Synchronization"
+      ]
+  [languages.es]
+    contentDir = "content/es"
+    languageName = "Español"
+    weight = 2
+    [languages.es.params]
+      tagline = "Ingeniero. Desarrollador de Software. Solucionador de problemas."
+      hero_description = "Ingeniero estructural y desarrollador de software con más de 14 años en Arquitectura, Ingeniería y Construcción (AEC), ampliando experiencia en IA/ML para crear soluciones inteligentes a problemas de ingeniería complejos."
+      hero_location = "Montreal, Canadá"
+      collab_tags = [
+        "Soluciones de IA/ML",
+        "Software de Ingeniería",
+        "I+D e Innovación",
+        "Liderazgo Técnico",
+        "Tecnología en Construcción"
+      ]
+
+[build]
+  writeStats = true
+
+[params]
+name = "Deijany Rodriguez-Linares"
+nav_name = "Deijany R.L."
+email = "deijany.rodriguez.linares@liu.se"
+profile_image = "/images/face5.jpg"
+author = "Deijany Rodriguez Linares"
+
+formspree_endpoint = "https://formspree.io/f/xbdyvgbl"
+
+og_image = "images/face5.jpg"
+
+description = "Structural engineer and full stack developer specializing in AI/ML. Building security and compliance solutions for LLM-based AI agents at Fireraven using Python, React, and modern web technologies."
+
+linkedin_url = "https://www.linkedin.com/in/deijany"
+linkedin_text = "linkedin.com/in/deijany"
+github_url = "https://github.com/deijany"
+github_text = "github.com/deijany"
+custom_css = ["css/custom.css"]
+# calendly_url = "https://calendly.com/mail-felipecordero/30min"
+# calendly_height = "700px"
+
+copyright = "© 2026 | Deijany Rodriguez Linares"
+resume_url_en = "/files/cv_deijany_en.pdf"
+# resume_url_fr = "/files/Felipe_Cordero_CV_French_version.pdf"
+resume_label = "View CV"
+
+# Contact Form Configuration
+# For security, sensitive endpoints are moved to config.local.toml
+# In production, these are injected via environment variables in GitHub Actions
+# 
+# To set up locally, create config.local.toml with:
+# [params]
+#   pexels_api_key = "your_pexels_api_key_here"
+#   formspree_endpoint = "https://formspree.io/f/your_endpoint_here"
+#
+# For production deployment, add these as GitHub Secrets:
+# PEXELS_API_KEY: 
+# - FORMSPREE_ENDPOINT: Your Formspree endpoint URL
+
+
+[[params.social]]
+icon = "linkedin-in"
+url = "https://www.linkedin.com/in/deijany/"
+
+[[params.social]]
+icon = "github"
+url = "https://github.com/deijany"
+
+sectionPagesMenu = 'main'
+
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+[server]
+  [[server.headers]]
+    for = "/**/*.css"
+    [server.headers.values]
+      Content-Type = "text/css"
+
+# Security configuration for environment variables
+# Note: We now use serverless functions for secure API key handling
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$']
+
+
+# Dynamic Color Palettes Configuration
+# Multiple color palettes that will be randomly selected on each page load
+# Each palette contains main_color, second_color, and third_color
+[params.color_palettes]
+  [[params.color_palettes.palette]]
+    name = "professional"
+    main_color = "#474A51"    # Graphite Gray – ultra professional, metallic, predominant
+    second_color = "#E52521"  # Mario Red – subtle accent, inspired by Super Mario
+    third_color = "#3CB043"   # Luigi Green – subtle accent, inspired by Luigi
+  
+  [[params.color_palettes.palette]]
+    name = "ocean"
+    main_color = "#1E40AF"    # Vibrant Blue – energetic and modern
+    second_color = "#06B6D4"  # Cyan – fresh and innovative
+    third_color = "#10B981"   # Emerald – growth and success
+  
+  # [[params.color_palettes.palette]]
+  #   name = "sunset"
+  #   main_color = "#DC2626"    # Vibrant Red – warm and energetic
+  #   second_color = "#F59E0B"  # Amber – optimistic and bright
+  #   third_color = "#EF4444"   # Red Orange – passion and creativity
+  # 
+  # [[params.color_palettes.palette]]
+  #   name = "forest"
+  #   main_color = "#059669"    # Deep Emerald – natural and stable
+  #   second_color = "#10B981"  # Green – growth and success
+  #   third_color = "#F59E0B"   # Golden Yellow – wisdom and clarity
+  # 
+  # [[params.color_palettes.palette]]
+  #   name = "fire"
+  #   main_color = "#EA580C"    # Orange – creativity and enthusiasm
+  #   second_color = "#DC2626"  # Red – passion and energy
+  #   third_color = "#F59E0B"   # Amber – warmth and optimism
+  
+  [[params.color_palettes.palette]]
+    name = "steel"
+    main_color = "#374151"    # Steel Gray – industrial and reliable
+    second_color = "#6B7280"  # Medium Gray – balanced and professional
+    third_color = "#10B981"   # Emerald – success and precision
+  
+  [[params.color_palettes.palette]]
+    name = "navy"
+    main_color = "#1E3A8A"    # Navy Blue – authoritative and trustworthy
+    second_color = "#3B82F6"  # Bright Blue – innovation and clarity
+    third_color = "#F59E0B"   # Amber – excellence and achievement
+  
+  # [[params.color_palettes.palette]]
+  #   name = "charcoal"
+  #   main_color = "#1F2937"    # Charcoal – sophisticated and modern
+  #   second_color = "#EF4444"  # Red – energy and determination
+  #   third_color = "#22C55E"   # Green – growth and stability
+  
+  [[params.color_palettes.palette]]
+    name = "slate"
+    main_color = "#475569"    # Slate Blue – professional and calm
+    second_color = "#0EA5E9"  # Sky Blue – clear thinking and progress
+    third_color = "#F97316"   # Orange – creativity and innovation
+  
+  [[params.color_palettes.palette]]
+    name = "midnight"
+    main_color = "#0F172A"    # Midnight Blue – deep and authoritative
+    second_color = "#8B5CF6"  # Purple – innovation and technology
+    third_color = "#06B6D4"   # Cyan – precision and clarity
+  
+
+
+
+
+# Pexels Background Configuration
+[params.pexels]
+api_key = "K5NOC1xEcfltFMyFONDScBzJgXCW6KXDS9bVU4xlaNUTsIxSsQabZp7p"
+# queries = [
+#     "signal processing",
+#     "wireless communications",
+#     "telecommunications antennas",
+#     "electronics lab",
+#     "embedded systems",
+#     "circuit board",
+#     "5g base station",
+#     "data visualization"
+#   ]
+
+[params.pexels.queries]
+home = ["signal processing", "wireless communications", "5g base station"]
+projects = ["electronics","signal processing","wireless communications"]
+blog = ["research","computer","data"]
+
+
+# # This section configures the random background images for the hero section
+# # The API key is securely handled via environment variables (see comments above)
+# [params.pexels]
+#   # Image search queries for random background images
+#   # Customize this list to change the types of images that appear
+#   # The system will randomly select from these queries for each page loads
+#   queries = [
+#     # "galaxy", "nebula", "planet", "astronomy",
+#     # "solar system", "black hole", "constellation", "meteor",
+#     # "comet", "asteroid", "space station", "satellite",
+#     # "structural long span bridges", "structural skycrapers", "astronomy nasa pictures",
+#     # "universe nasa pictures",
+#     "long span bridges",
+#     "skyscrapers",
+#     # "the universe galaxies",
+#     "sky and clouds",
+#     "galactic core"
+#     # "nebula nasa pictures",
+#     # "artificial intelligence",
+#   ]

@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.155.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+    <script>
+  window.PEXELS_API_KEY = "K5NOC1xEcfltFMyFONDScBzJgXCW6KXDS9bVU4xlaNUTsIxSsQabZp7p";
+  window.PEXELS_QUERIES = "[\"signal processing\",\"wireless communications\",\"5g base station\"]";
+</script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<title>
+  
+    Deijany RL | Signal Processing,. Sampling frequency synchronization,. Linearization,. Equalization.
+  
+</title>
+
+
+<meta name="description" content="Structural engineer and full stack developer specializing in AI/ML. Building security and compliance solutions for LLM-based AI agents at Fireraven using Python, React, and modern web technologies." />
+<meta name="author" content="Deijany Rodriguez Linares" />
+<link rel="canonical" href="http://localhost:1313/" />
+
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Deijany RL | Signal Processing,. Sampling frequency synchronization,. Linearization,. Equalization." />
+<meta property="og:description" content="Structural engineer and full stack developer specializing in AI/ML. Building security and compliance solutions for LLM-based AI agents at Fireraven using Python, React, and modern web technologies." />
+<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:image" content="http://localhost:1313/images/face5.jpg">
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:site_name" content="Deijany RL" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Deijany RL | Signal Processing,. Sampling frequency synchronization,. Linearization,. Equalization." />
+<meta name="twitter:description" content="Structural engineer and full stack developer specializing in AI/ML. Building security and compliance solutions for LLM-based AI agents at Fireraven using Python, React, and modern web technologies." />
+<meta name="twitter:image" content="http://localhost:1313/images/face5.jpg" />
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
+
+    
+    
+    <style>
+ 
+:root {
+   
+  
+  
+  --color-primary: #474A51;
+  --color-second: #E52521;
+  --color-third: #3CB043;
+  
+  
+   
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 80%, white);
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-primary-lighter: color-mix(in srgb, var(--color-primary) 20%, white);
+  
+  --color-second-light: color-mix(in srgb, var(--color-second) 80%, white);
+  --color-second-dark: color-mix(in srgb, var(--color-second) 80%, black);
+  --color-second-lighter: color-mix(in srgb, var(--color-second) 20%, white);
+  
+  --color-third-light: color-mix(in srgb, var(--color-third) 80%, white);
+  --color-third-dark: color-mix(in srgb, var(--color-third) 80%, black);
+  --color-third-lighter: color-mix(in srgb, var(--color-third) 20%, white);
+  
+   
+  --color-gray-50: color-mix(in srgb, var(--color-primary) 5%, white);
+  --color-gray-100: color-mix(in srgb, var(--color-primary) 10%, white);
+  --color-gray-300: color-mix(in srgb, var(--color-primary) 20%, white);
+  --color-gray-400: color-mix(in srgb, var(--color-primary) 30%, white);
+  --color-gray-500: color-mix(in srgb, var(--color-primary) 40%, white);
+  --color-gray-600: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-gray-700: color-mix(in srgb, var(--color-primary) 60%, black);
+  --color-gray-800: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-gray-900: color-mix(in srgb, var(--color-primary) 90%, black);
+  
+   
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+   
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+  --color-shadow-lighter: rgba(0, 0, 0, 0.05);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  
+   
+  --color-text-muted: var(--color-gray-500);
+  --color-border-secondary: var(--color-gray-300);
+  --color-success: var(--color-second);
+  
+   
+  --color-bg: var(--color-white);
+  --color-bg-secondary: var(--color-gray-100);
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-700);
+  --color-border: var(--color-gray-300);
+}
+
+ 
+.dark {
+  --color-bg: color-mix(in srgb, var(--color-primary) 50%, black);
+  --color-bg-secondary: color-mix(in srgb, var(--color-primary) 30%, black);
+  --color-bg-tertiary: color-mix(in srgb, var(--color-primary) 40%, black);
+  --color-text-primary: var(--color-gray-50);
+  --color-text-secondary: var(--color-gray-300);
+  --color-border: var(--color-gray-700);
+  --color-text-muted: var(--color-gray-400);
+  --color-border-secondary: var(--color-gray-600);
+}
+</style>
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.css?v=1769890162" data-version="1769890162">
+    <style>
+         
+        body {
+            visibility: hidden;
+        }
+        .dark body {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-bg dark:bg-bg text-text-primary dark:text-text-primary flex flex-col min-h-screen transition-colors duration-200">
+
+    <nav class="fixed w-full bg-bg dark:bg-bg shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-3xl font-bold text-text-primary dark:text-text-primary font-heading">Deijany R.L.</a>
+      </div>
+      <div class="hidden lg:flex items-center space-x-8">
+        
+          
+                      
+            
+            <a href="/#about" class="nav-link text-text-primary dark:text-text-primary">About</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#skills" class="nav-link text-text-primary dark:text-text-primary">Skills</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#experience" class="nav-link text-text-primary dark:text-text-primary">Experience</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#publications" class="nav-link text-text-primary dark:text-text-primary">Publications</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#awards" class="nav-link text-text-primary dark:text-text-primary">Awards</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/#contact" class="nav-link text-text-primary dark:text-text-primary">Contact</a>
+          
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="relative group">
+          <a href="#" class="nav-link text-text-primary dark:text-text-primary flex items-center" aria-label="Language switcher">
+            <span class="text-lg mr-1">🇬🇧</span>
+            <i class="fas fa-chevron-down ml-1 text-sm"></i>
+          </a>
+          <div class="submenu absolute right-0 top-full mt-2 bg-bg dark:bg-bg shadow-lg rounded-lg z-50 min-w-[8rem] opacity-0 invisible">
+            
+            
+              
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                  
+                    
+                  
+                
+                
+                <a href="/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary font-semibold">
+                  <span class="mr-2">🇬🇧</span>English
+                </a>
+              
+            
+              
+              
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                  
+                    
+                      
+                      
+                    
+                  
+                
+                
+                <a href="/es/" class="nav-link block px-4 py-2 text-sm text-text-primary dark:text-text-primary ">
+                  <span class="mr-2">🇪🇸</span>Español
+                </a>
+              
+            
+          </div>
+        </div>
+        
+
+        
+        <div class="flex items-center space-x-4" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          
+          
+          <a href="https://github.com/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          
+        </div>
+        
+        <button id="darkModeToggle" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+      </div>
+      <div class="lg:hidden flex items-center space-x-4">
+        
+        <button id="darkModeToggleMobile" class="text-text-primary dark:text-text-primary focus:outline-none">
+          <i class="fas fa-toggle-on dark:hidden"></i>
+          <i class="fas fa-toggle-off hidden dark:block"></i>
+        </button>
+        <button id="menu-btn" class="text-text-primary dark:text-text-primary">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div id="mobile-menu" class="hidden lg:hidden bg-bg dark:bg-bg shadow-lg">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      
+        
+          
+          <a href="/#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            About
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#skills" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Skills
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#experience" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Experience
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#publications" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Publications
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#awards" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Awards
+          </a>
+        
+        
+      
+        
+          
+          <a href="/#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Contact
+          </a>
+        
+        
+      
+      
+      
+      
+      <div class="px-3 py-2 border-t border-border-primary dark:border-border-primary">
+        <div class="flex items-center space-x-3">
+          
+          
+            
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                  
+                
+              
+              
+              <a href="/" class="px-2 py-1 text-xl opacity-100 font-semibold" aria-label="Switch to English (go to home)">
+                <span aria-hidden="true">🇬🇧</span>
+              </a>
+            
+          
+            
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                
+                  
+                    
+                    
+                  
+                
+              
+              
+              <a href="/es/" class="px-2 py-1 text-xl opacity-70 hover:opacity-100" aria-label="Switch to Español (has translation)">
+                <span aria-hidden="true">🇪🇸</span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+
+      
+      <div class="flex items-center space-x-6 px-3 py-3 border-t border-border-primary dark:border-border-primary mt-2" data-animation="social">
+        <a href="https://www.linkedin.com/in/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/deijany" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  
+  <style>
+    .group.open .submenu {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
+
+  
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Navigation script loaded');
+      
+      const sectionLinks = document.querySelectorAll('.section-link');
+      console.log('Found section links:', sectionLinks.length);
+      const homePath = '\/';
+      
+      sectionLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          console.log('Section link clicked:', this.getAttribute('data-section'));
+          
+          const section = this.getAttribute('data-section');
+          const isHomePage = window.location.pathname === homePath || window.location.pathname === homePath + 'index.html' || window.location.pathname === homePath.replace(/\/$/, '');
+          console.log('Is home page:', isHomePage);
+          
+          if (isHomePage) {
+            
+            const targetElement = document.querySelector(section);
+            console.log('Target element found:', !!targetElement);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }
+          } else {
+            
+            console.log('Navigating to:', homePath + section);
+            window.location.href = homePath + section;
+          }
+        });
+      });
+      
+      
+      function handleHashScroll() {
+        console.log('Checking for hash:', window.location.hash);
+        if (window.location.hash) {
+          const targetElement = document.querySelector(window.location.hash);
+          console.log('Hash target element found:', !!targetElement);
+          if (targetElement) {
+            
+            setTimeout(() => {
+              console.log('Scrolling to hash target');
+              targetElement.scrollIntoView({
+                behavior: 'instant',
+                block: 'start'
+              });
+            }, 100);
+          }
+        }
+      }
+      
+      
+      handleHashScroll();
+      
+      
+      setTimeout(handleHashScroll, 500);
+      setTimeout(handleHashScroll, 1000);
+      
+      
+      window.addEventListener('hashchange', function() {
+        console.log('Hash changed to:', window.location.hash);
+        handleHashScroll();
+      });
+      
+      
+      window.addEventListener('load', function() {
+        console.log('Window loaded, checking hash');
+        setTimeout(handleHashScroll, 200);
+      });
+    });
+    
+    
+    document.querySelectorAll('.group > a.nav-link, .group > button.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const group = this.closest('.group');
+        const isOpen = group.classList.contains('open');
+
+        
+        document.querySelectorAll('.group').forEach(g => g.classList.remove('open'));
+
+        
+        if (!isOpen) {
+          group.classList.add('open');
+        }
+      });
+
+      document.addEventListener('click', function(event) {
+        const group = link.closest('.group');
+        if (!group.contains(event.target)) {
+          group.classList.remove('open');
+        }
+      });
+    });
+
+    
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    document.getElementById('darkModeToggleMobile').addEventListener('click', toggleDarkMode);
+
+    
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+
+  </script>
+</nav>
+
+
+
+
+    <div class="w-full h-16"></div>
+
+    <main class="flex-grow">
+        
+
+<section
+  id="home"
+  class="flex items-center justify-center gradient-bg text-white relative overflow-hidden hero-section min-h-[10vh]"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-16">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
+      
+      <div class="lg:w-1/2 flex justify-center lg:justify-start mt-8 md:mt-0">
+        <div class="relative" data-animation="profile-image">
+          
+          <div class="relative">
+            <div class="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-primary p-1 shadow-2xl">
+              <div class="w-full h-full rounded-full overflow-hidden bg-white">
+                <img 
+                  src="/images/face5.jpg" 
+                  alt="Portrait of Deijany Rodriguez-Linares" 
+                  loading="lazy" 
+                  decoding="async" 
+                  class="object-cover w-full h-full rounded-full"
+                />
+              </div>
+            </div>
+
+            
+            <div class="absolute -bottom-4 -right-4" data-animation="location-badge">
+              <div class="flex items-center bg-black/80 backdrop-blur-sm text-white px-4 py-2 rounded-full shadow-xl border border-white/20 min-w-fit whitespace-nowrap">
+                <i class="fas fa-map-marker-alt mr-2 text-primary-light flex-shrink-0"></i>
+                <span class="font-semibold text-sm">Linköping, Sweden</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center lg:text-left mt-8 md:mt-0" style="width: 100%; max-width: 600px; min-width: 300px;">
+        
+        <div class="mb-4 mt-4 md:mt-0 hero-text-element" data-animation="greeting">
+          <span class="hero-text-accent font-medium text-lg block">Hello, I&#39;m</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 font-heading leading-tight hero-name hero-text-element" data-animation="name">
+          Deijany Rodriguez-Linares
+        </h1>
+        
+        <h2 class="text-2xl md:text-3xl lg:text-4xl mb-6 font-light hero-text-accent hero-text-element" data-animation="tagline">
+          <span class="typewriter" data-original-text="Signal Processing,. Sampling frequency synchronization,. Linearization,. Equalization.">Signal Processing,. Sampling frequency synchronization,. Linearization,. Equalization.</span>
+        </h2>
+        
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto lg:mx-0 hero-text-muted leading-relaxed hero-text-element px-4 py-3 rounded-lg" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(8px);" data-animation="description">
+          Ph.D. candidate in Communication Systems focusing on hardware-aware, low-complexity signal processing for modern wireless systems.
+        </p>
+
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end hero-text-element" data-animation="buttons">
+          <a href="#contact" class="bg-bg text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hero-button button-hover">
+            Get in Touch
+          </a>
+          <a href="/files/cv_deijany_en.pdf" target="_blank" rel="noopener" class="bg-bg text-primary dark:text-white px-8 py-4 rounded-lg font-semibold hero-button button-hover">
+            View CV
+          </a>
+        </div>
+        
+        <div class="flex justify-center lg:justify-end mt-8 mb-8 md:mb-0 hero-text-element" data-animation="social">
+          <div class="flex space-x-4 px-4 py-3 rounded-lg" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px);">
+            
+            <a href="https://www.linkedin.com/in/deijany/" target="_blank" rel="noopener noreferrer" class="text-white transition-transform duration-300 hover:scale-125">
+              <i class="fab fa-linkedin-in text-3xl"></i>
+            </a>
+            
+            <a href="https://github.com/deijany" target="_blank" rel="noopener noreferrer" class="text-white transition-transform duration-300 hover:scale-125">
+              <i class="fab fa-github text-3xl"></i>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a
+    id="pexels-credit"
+    class="pexels-credit"
+    href="https://www.pexels.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >Photo / Pexels</a>
+</section>
+  
+<section id="about" class="py-12 bg-bg dark:bg-bg relative about-section" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <h2 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary about-text-element">About Me</h2>
+    <div class="flex flex-col lg:flex-row gap-8">
+      <div class="flex-1 about-text-element">
+        <div class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-xl shadow-lg border border-border-primary dark:border-border-primary">
+          <p class="text-lg text-text-secondary dark:text-text-secondary leading-relaxed">
+            PhD researcher in signal processing working on estimation, compensation, synchronization, linearization, and equalization, with a strong focus on robustness under non-ideal hardware effects and noisy conditions. Develops hardware-aware, low-complexity algorithms, including neural-network–inspired linearizers, alongside classical model-based techniques.
+          </p>
+          <div class="mt-6">
+            <a href="https://www.linkedin.com/in/deijany" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gradient-primary text-white px-4 py-2 rounded-lg shadow-lg about-button button-hover">
+              <i class="fab fa-linkedin-in mr-3 text-lg"></i> 
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <div class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-xl shadow-lg border border-border-primary dark:border-border-primary about-card card-hover">
+        <div class="flex items-center justify-between mb-6 border-b border-border-primary dark:border-border-primary pb-3">
+          <h3 class="text-xl font-semibold font-heading text-text-primary dark:text-text-primary flex items-center about-text-element">
+            <i class="fas fa-info-circle mr-3 text-primary dark:text-white"></i>
+            Quick Facts
+          </h3>
+          <button id="aboutModalBtn" class="bg-gradient-primary text-white px-6 py-2 rounded-lg shadow-lg font-semibold flex items-center about-button text-sm button-hover">
+            <i class="fas fa-book-open mr-2"></i>
+            More
+          </button>
+        </div>
+        <div class="space-y-2">
+          
+            
+              <div class="flex items-start quick-fact-card about-text-element py-3 px-4 rounded-xl">
+                <i class="fas fa-graduation-cap text-primary dark:text-white text-lg mr-3"></i>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 dark:text-text-primary mb-1 text-lg">Current Position</h4>
+                  
+                  
+                  
+                  
+                  
+                  
+                    <p class="text-gray-700 dark:text-text-tertiary text-base leading-relaxed">Ph.D. Candidate, Communication Systems — Linköping University</p>
+                  
+                </div>
+              </div>
+            
+              <div class="flex items-start quick-fact-card about-text-element py-3 px-4 rounded-xl">
+                <i class="fas fa-calendar text-primary dark:text-white text-lg mr-3"></i>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 dark:text-text-primary mb-1 text-lg">Expected Graduation</h4>
+                  
+                  
+                  
+                  
+                  
+                  
+                    <p class="text-gray-700 dark:text-text-tertiary text-base leading-relaxed">April 17, 2026</p>
+                  
+                </div>
+              </div>
+            
+              <div class="flex items-start quick-fact-card about-text-element py-3 px-4 rounded-xl">
+                <i class="fas fa-cogs text-primary dark:text-white text-lg mr-3"></i>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 dark:text-text-primary mb-1 text-lg">Core Expertise</h4>
+                  
+                  
+                  
+                  
+                  
+                  
+                    <p class="text-gray-700 dark:text-text-tertiary text-base leading-relaxed">Signal Processing · Estimation &amp; Synchronization · Hardware-Aware DSP · Linearization · Equalization</p>
+                  
+                </div>
+              </div>
+            
+              <div class="flex items-start quick-fact-card about-text-element py-3 px-4 rounded-xl">
+                <i class="fas fa-code text-primary dark:text-white text-lg mr-3"></i>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 dark:text-text-primary mb-1 text-lg">Tools &amp; Languages</h4>
+                  
+                  
+                  
+                  
+                  
+                  
+                    <p class="text-gray-700 dark:text-text-tertiary text-base leading-relaxed">Python · MATLAB · C++ · PyTorch · NumPy · SciPy · Linux</p>
+                  
+                </div>
+              </div>
+            
+              <div class="flex items-start quick-fact-card about-text-element py-3 px-4 rounded-xl">
+                <i class="fas fa-language text-primary dark:text-white text-lg mr-3"></i>
+                <div class="flex-1">
+                  <h4 class="font-bold text-gray-900 dark:text-text-primary mb-1 text-lg">Languages</h4>
+                  
+                  
+                  
+                  
+                  
+                  
+                    <div class="flex flex-wrap gap-2">
+                      
+                      
+                        
+                        
+                          <span class="inline-flex items-center px-3 py-1.5 text-gray-700 dark:text-text-tertiary text-base font-medium border border-border-primary dark:border-border-primary rounded-xl">
+                            🇪🇸 Spanish (Native)
+                          </span>
+                        
+                      
+                        
+                        
+                          <span class="inline-flex items-center px-3 py-1.5 text-gray-700 dark:text-text-tertiary text-base font-medium border border-border-primary dark:border-border-primary rounded-xl">
+                            🇬🇧 English (Fluent)
+                          </span>
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+                </div>
+              </div>
+            
+          
+        </div>
+      </div>
+    </div>
+
+  
+  
+  <div id="aboutModal" class="fixed inset-0 bg-bg bg-opacity-50 z-50 hidden items-center justify-center px-4 py-16">
+    <div class="bg-bg dark:bg-bg rounded-xl shadow-2xl w-full max-w-5xl lg:max-w-6xl max-h-[70vh] lg:max-h-[80vh] overflow-y-auto sidebar-scroll">
+      <div class="p-8">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold text-text-primary dark:text-text-primary">About Deijany Rodriguez-Linares</h3>
+          <button id="closeAboutModal" class="text-text-muted text-text-secondary dark:text-text-muted text-2xl font-bold">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="space-y-6 text-text-secondary dark:text-text-secondary">
+          <p class="text-lg leading-relaxed">PhD researcher in signal processing working on estimation, compensation, synchronization, linearization, and equalization, with a strong focus on robustness under non-ideal hardware effects and noisy conditions. Develops hardware-aware, low-complexity algorithms, including neural-network–inspired linearizers, alongside classical model-based techniques.</p>
+          <p class="text-lg leading-relaxed">I received a B.Sc. in Nuclear Engineering (2015), a Postgraduate Diploma in Medical Physics (2016), and an M.Sc. in Nuclear Engineering (2018) from the Higher Institute of Technologies and Applied Sciences (InSTEC), University of Havana, Cuba. I am currently pursuing the Ph.D. degree in Communication Systems at the Department of Electrical Engineering, Linköping University, Sweden.
+Previously, I worked as a Junior Medical Physicist at CECMED (2015–2018) and as a Research Associate at InSTEC (2019–2020). Since 2019, I have been a Junior Associate at ICTP (Trieste, Italy).</p>
+
+          <div class="bg-gradient-primary-lighter p-6 rounded-xl border border-primary-light">
+            <h4 class="text-xl font-semibold mb-3 text-primary-dark flex items-center">
+              <i class="fas fa-heart mr-3 text-second"></i>
+              Research Interests
+            </h4>
+            <p class="text-primary-dark leading-relaxed">My main research interests include estimation and synchronization, hardware-constrained signal processing, linearization of non-ideal ADC/DAC response, and equalization of frequency-response distortions. I am particularly interested in methods that balance theoretical rigor, robustness, and computational efficiency for deployment on real hardware and at scale. A recurring theme in my work is the use of learning-inspired and unsupervised methods to discover structure, tune models, and improve performance when labeled data is limited.</p>
+          </div>
+
+          <p class="text-lg leading-relaxed"></p>
+          <p class="text-lg leading-relaxed">Outside research, I enjoy sports, reading, music, technical writing, and collaborative board games.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('aboutModal');
+  const modalBtn = document.getElementById('aboutModalBtn');
+  const closeBtn = document.getElementById('closeAboutModal');
+
+  
+  modalBtn.addEventListener('click', function() {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+
+  
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+
+  
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+});
+</script>
+
+  
+ 
+<section id="skills" class="py-12 bg-bg-secondary dark:bg-bg-secondary skills-section border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+      
+      <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">Skills</h2>
+      <p class="text-lg text-center mb-12 text-text-secondary dark:text-text-tertiary italic">My expertise lies in DSP for communication systems, with a strong emphasis on hardware-aware, low-complexity algorithm design under practical hardware constraints. I combine classical methods with learning-inspired techniques to address hardware effects in modern wireless systems.</p>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        
+        <div class="bg-bg dark:bg-bg p-6 rounded-xl shadow-md skill-card border border-border-primary dark:border-border-primary card-hover" data-animate>
+          <div class="flex items-center mb-4">
+            
+            
+            <i class="fas fa-signal text-3xl mr-4 text-primary-light" aria-hidden="true"></i>
+            <h3 class="text-lg font-heading font-bold text-text-primary dark:text-text-primary">Beyond-5G Baseband Signal Processing</h3>
+          </div>
+          <p class="text-text-secondary dark:text-text-tertiary text-base leading-relaxed">Ph.D. research on low-complexity, hardware-aware baseband signal processing algorithms within the ELLIIT project for beyond-5G wireless systems.</p>
+        </div>
+        
+        <div class="bg-bg dark:bg-bg p-6 rounded-xl shadow-md skill-card border border-border-primary dark:border-border-primary card-hover" data-animate>
+          <div class="flex items-center mb-4">
+            
+            
+            <i class="fas fa-wave-square text-3xl mr-4 text-warning" aria-hidden="true"></i>
+            <h3 class="text-lg font-heading font-bold text-text-primary dark:text-text-primary">Sampling-Frequency Synchronization</h3>
+          </div>
+          <p class="text-text-secondary dark:text-text-tertiary text-base leading-relaxed">Development of efficient sampling-frequency offset estimation and compensation methods for wideband communication systems under strict hardware constraints.</p>
+        </div>
+        
+        <div class="bg-bg dark:bg-bg p-6 rounded-xl shadow-md skill-card border border-border-primary dark:border-border-primary card-hover" data-animate>
+          <div class="flex items-center mb-4">
+            
+            
+            <i class="fas fa-microchip text-3xl mr-4 text-second-light" aria-hidden="true"></i>
+            <h3 class="text-lg font-heading font-bold text-text-primary dark:text-text-primary">ADC Linearization</h3>
+          </div>
+          <p class="text-text-secondary dark:text-text-tertiary text-base leading-relaxed">Design of low-complexity, learning-inspired linearizers for ADCs and data converters, covering memoryless and frequency-dependent nonlinearities before and after sampling under hardware constraints.</p>
+        </div>
+        
+        <div class="bg-bg dark:bg-bg p-6 rounded-xl shadow-md skill-card border border-border-primary dark:border-border-primary card-hover" data-animate>
+          <div class="flex items-center mb-4">
+            
+            
+            <i class="fas fa-sliders text-3xl mr-4 text-primary-light" aria-hidden="true"></i>
+            <h3 class="text-lg font-heading font-bold text-text-primary dark:text-text-primary">DAC Equalization</h3>
+          </div>
+          <p class="text-text-secondary dark:text-text-tertiary text-base leading-relaxed">Equalization of DAC frequency-response distortions using linear-phase FIR filters across multiple Nyquist bands.</p>
+        </div>
+        
+        <div class="bg-bg dark:bg-bg p-6 rounded-xl shadow-md skill-card border border-border-primary dark:border-border-primary card-hover" data-animate>
+          <div class="flex items-center mb-4">
+            
+            
+            <i class="fas fa-calculator text-3xl mr-4 text-success" aria-hidden="true"></i>
+            <h3 class="text-lg font-heading font-bold text-text-primary dark:text-text-primary">Model-Order &amp; Complexity Analysis</h3>
+          </div>
+          <p class="text-text-secondary dark:text-text-tertiary text-base leading-relaxed">Derivation of closed-form model-order and complexity predictions using symbolic regression and structured optimization.</p>
+        </div>
+        
+        <div class="bg-bg dark:bg-bg p-6 rounded-xl shadow-md skill-card border border-border-primary dark:border-border-primary card-hover" data-animate>
+          <div class="flex items-center mb-4">
+            
+            
+            <i class="fas fa-chalkboard-teacher text-3xl mr-4 text-third-light" aria-hidden="true"></i>
+            <h3 class="text-lg font-heading font-bold text-text-primary dark:text-text-primary">Teaching assistant</h3>
+          </div>
+          <p class="text-text-secondary dark:text-text-tertiary text-base leading-relaxed">Teaching assistant for Signal Processing for Communications, Analog Filters, and Digital Filters.</p>
+        </div>
+        
+      </div>
+
+      <div class="text-center">
+        <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          
+        </div>
+      </div>
+
+    
+  </div>
+</section>
+
+
+  
+<section id="experience" class="py-12 bg-bg dark:bg-bg border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">Experience</h2>
+    <p class="text-lg text-center mb-12 text-gray-700 dark:text-text-tertiary italic">Research and engineering experience in hardware-aware signal processing, computational modeling, and applied machine learning, combined with university-level teaching and scientific research.</p>
+
+    
+    <div class="text-center mb-12">
+      <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center">
+        
+        
+        
+        <a href="/files/cv_deijany_en.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-gradient-primary text-white text-sm sm:text-lg px-4 sm:px-6 py-4 rounded-lg font-semibold shadow-lg w-auto sm:w-auto button-hover">
+          <i class="fas fa-file-pdf text-2xl mr-3"></i>
+          Download Resume (EN)
+        </a>
+        
+      </div>
+    </div>
+
+    
+    <div class="relative pt-4">
+      
+      <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 transform -translate-x-1/2 shadow-lg z-0 timeline-line"></div>
+
+      
+      <div class="space-y-8 md:space-y-16">
+        
+        <div class="relative timeline-item" data-animate>
+          
+          <div class="hidden md:block absolute left-1/2 top-2 w-4 h-4 rounded-full border-4 transform -translate-x-1/2 z-20 timeline-bullet shadow-lg"></div>
+          
+          
+          <div class="md:hidden px-4 text-center mb-4">
+            <div class="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>2021 – Present
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 justify-center">
+            
+            <div class="md:w-1/2 px-4 flex justify-end">
+              <div class="max-w-sm w-full">
+                
+                <div class="company-card bg-bg dark:bg-bg p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                  <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary mb-2">
+                    
+                    <a href="https://liu.se" target="_blank" rel="noopener noreferrer" class="company-link group">
+                      Linköping University
+                      <i class="fas fa-external-link-alt ml-2 text-primary dark:text-primary-light opacity-0 text-sm"></i>
+                    </a>
+                    
+                  </h3>
+                  <h4 class="text-primary dark:text-white font-semibold text-lg mb-3">Ph.D. Candidate — Communication Systems</h4>
+                  
+                  
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    
+                    <span class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-industry mr-1"></i>Research &amp; Higher Education
+                    </span>
+                    
+                    
+                    <span class="inline-flex items-center bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-map-marker-alt mr-1"></i>Linköping, Sweden
+                    </span>
+                    
+                    
+                  </div>
+                  
+                  
+                  
+                  <p class="text-sm text-gray-700 dark:text-text-tertiary italic border-l-4 border-primary-light pl-3">
+                    Division of Communication Systems, Department of Electrical Engineering
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="md:w-1/2 px-4">
+              
+              <div class="hidden md:block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-3 shadow-lg w-fit">
+                <i class="fas fa-calendar-alt mr-2"></i>2021 – Present
+              </div>
+              
+              <div class="achievements-card bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-tasks text-third dark:text-third-light mr-3 text-lg"></i>
+                  <h5 class="text-lg font-semibold text-text-primary dark:text-text-primary">Key Achievements</h5>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-text-secondary">
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Ph.D. research on low-complexity, hardware-aware baseband signal processing algorithms (ELLIIT project: Baseband Processing for Beyond 5G Wireless).</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Development of efficient sampling-frequency offset estimation and compensation methods for wideband communication systems.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Design of low-complexity, learning-inspired linearizers for ADCs and data converters, addressing memoryless and frequency-dependent nonlinearities before and after sampling.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Equalization of DAC frequency-response distortions using linear-phase FIR filters across multiple Nyquist bands.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Derivation of closed-form model-order and complexity predictions using symbolic regression and structured optimization.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Focus on implementability, complexity analysis, and hardware-constrained algorithm design.</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative timeline-item" data-animate>
+          
+          <div class="hidden md:block absolute left-1/2 top-2 w-4 h-4 rounded-full border-4 transform -translate-x-1/2 z-20 timeline-bullet shadow-lg"></div>
+          
+          
+          <div class="md:hidden px-4 text-center mb-4">
+            <div class="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>2019 – 2020
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 justify-center">
+            
+            <div class="md:w-1/2 px-4 flex justify-end">
+              <div class="max-w-sm w-full">
+                
+                <div class="company-card bg-bg dark:bg-bg p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                  <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary mb-2">
+                    
+                    University of Havana
+                    
+                  </h3>
+                  <h4 class="text-primary dark:text-white font-semibold text-lg mb-3">Teaching and Research Assistant</h4>
+                  
+                  
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    
+                    <span class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-industry mr-1"></i>Research &amp; Higher Education
+                    </span>
+                    
+                    
+                    <span class="inline-flex items-center bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-map-marker-alt mr-1"></i>Havana, Cuba
+                    </span>
+                    
+                    
+                  </div>
+                  
+                  
+                  
+                  <p class="text-sm text-gray-700 dark:text-text-tertiary italic border-l-4 border-primary-light pl-3">
+                    Higher Institute of Technologies and Applied Sciences (InSTEC)
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="md:w-1/2 px-4">
+              
+              <div class="hidden md:block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-3 shadow-lg w-fit">
+                <i class="fas fa-calendar-alt mr-2"></i>2019 – 2020
+              </div>
+              
+              <div class="achievements-card bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-tasks text-third dark:text-third-light mr-3 text-lg"></i>
+                  <h5 class="text-lg font-semibold text-text-primary dark:text-text-primary">Key Achievements</h5>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-text-secondary">
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Researched deep learning combined with Monte Carlo radiation transport to improve prediction accuracy for low-probability interaction events.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Teaching assistant for Numerical Mathematics~II and Fundamentals of Medical Physics.</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="relative timeline-item" data-animate>
+          
+          <div class="hidden md:block absolute left-1/2 top-2 w-4 h-4 rounded-full border-4 transform -translate-x-1/2 z-20 timeline-bullet shadow-lg"></div>
+          
+          
+          <div class="md:hidden px-4 text-center mb-4">
+            <div class="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              <i class="fas fa-calendar-alt mr-2"></i>2015 – 2018
+            </div>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 justify-center">
+            
+            <div class="md:w-1/2 px-4 flex justify-end">
+              <div class="max-w-sm w-full">
+                
+                <div class="company-card bg-bg dark:bg-bg p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                  <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary mb-2">
+                    
+                    Center for State Control of Medicines, Equipment and Medical Devices (CECMED)
+                    
+                  </h3>
+                  <h4 class="text-primary dark:text-white font-semibold text-lg mb-3">Medical Physicist — QA and Modeling</h4>
+                  
+                  
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    
+                    <span class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-industry mr-1"></i>Medical Physics &amp; Healthcare
+                    </span>
+                    
+                    
+                    <span class="inline-flex items-center bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                      <i class="fas fa-map-marker-alt mr-1"></i>Havana, Cuba
+                    </span>
+                    
+                    
+                  </div>
+                  
+                  
+                  
+                  <p class="text-sm text-gray-700 dark:text-text-tertiary italic border-l-4 border-primary-light pl-3">
+                    Cuban regulatory authority for medicines and medical devices
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="md:w-1/2 px-4">
+              
+              <div class="hidden md:block bg-gradient-primary text-white px-4 py-2 rounded-full text-sm font-medium mb-3 shadow-lg w-fit">
+                <i class="fas fa-calendar-alt mr-2"></i>2015 – 2018
+              </div>
+              
+              <div class="achievements-card bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary p-6 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-tasks text-third dark:text-third-light mr-3 text-lg"></i>
+                  <h5 class="text-lg font-semibold text-text-primary dark:text-text-primary">Key Achievements</h5>
+                </div>
+                <ul class="space-y-3 text-gray-700 dark:text-text-secondary">
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Developed image processing for tumor detection and classification.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Performed Monte Carlo simulation of radiation transport for dose calculation and verification in treatment planning systems.</span>
+                  </li>
+                  
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-second mr-3 mt-1 flex-shrink-0"></i>
+                    <span>Conducted dose plan verification, beam model validation, and participation in clinical quality assurance audits.</span>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section id="publications" class="py-12 bg-bg-secondary dark:bg-bg-secondary border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+      <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">Publications</h2>
+      
+        <p class="text-lg text-center mb-12 text-text-secondary dark:text-text-tertiary italic">(Last 3 Years)</p>
+      
+      <div class="prose dark:prose-invert max-w-none">
+        <h2 id="journal-articles">Journal Articles</h2>
+<ul>
+<li><strong>D. R. Linares</strong>, O. Moryakova, and H. Johansson, “Joint sampling frequency offset estimation and compensation algorithms based on the Farrow structure,” <em>IEEE Open J. Signal Process.</em>, 2026. <strong>Manuscript in preparation</strong> (journal extension of DSP 2025 conference paper; 12-page draft).</li>
+<li><strong>D. Rodriguez-Linares</strong>, O. Moryakova, and H. Johansson, “Efficient Computation of Time-Index Powered Weighted Sums Using Cascaded Accumulators,” <em>IEEE Signal Process. Lett.</em>, 2026. <strong>Accepted (minor revision)</strong>. arXiv: <a href="https://arxiv.org/abs/2509.15069">2509.15069</a></li>
+<li><strong>D. R. Linares</strong> and H. Johansson, “Low-Complexity Frequency-Dependent Linearizers Based on Parallel Bias-Modulus and Bias-ReLU Operations,” <em>IEEE Access</em>, vol. 13, pp. 209796–209812, 2025. DOI: <a href="https://doi.org/10.1109/ACCESS.2025.3642613">10.1109/ACCESS.2025.3642613</a></li>
+<li><strong>D. R. Linares</strong>, H. Johansson, and Y. Wang, “Order Estimation of Linear-Phase FIR Filters for DAC Equalization in Multiple Nyquist Bands,” <em>IEEE Signal Process. Lett.</em>, vol. 31, pp. 2955–2959, 2024. DOI: <a href="https://doi.org/10.1109/LSP.2024.3483008">10.1109/LSP.2024.3483008</a></li>
+<li>A. Quiñones-Espín, M. Perez-Diaz, R. Espín-Coto, <strong>D. R. Linares</strong>, and J. D. Lopez-Cabrera, “Automatic detection of breast masses using deep learning with YOLO approach,” <em>Health Technol.</em>, vol. 13, no. 6, pp. 915–923, 2023. DOI: <a href="https://doi.org/10.1007/s12553-023-00783-x">10.1007/s12553-023-00783-x</a></li>
+</ul>
+<hr>
+<h2 id="conference-proceedings">Conference Proceedings</h2>
+<ul>
+<li><strong>D. R. Linares</strong>, O. Moryakova, and H. Johansson, “Joint Sampling Frequency Offset Estimation and Compensation Based on the Farrow Structure,” in <em>Proc. 25th Int. Conf. Digit. Signal Process. (DSP)</em>, 2025, pp. 1–5. DOI: <a href="https://doi.org/10.1109/DSP65409.2025.11074995">10.1109/DSP65409.2025.11074995</a></li>
+<li><strong>D. R. Linares</strong> and H. Johansson, “Digital Linearizer Based on 1-Bit Quantizations,” in <em>Proc. IEEE 24th Int. Conf. Commun. Technol. (ICCT)</em>, 2024, pp. 1659–1663. DOI: <a href="https://doi.org/10.1109/ICCT62411.2024.10946352">10.1109/ICCT62411.2024.10946352</a></li>
+<li><strong>D. R. Linares</strong> and H. Johansson, “Low-Complexity Memoryless Linearizer for Analog-to-Digital Interfaces,” in <em>Proc. 24th Int. Conf. Digit. Signal Process. (DSP)</em>, 2023, pp. 1–5. DOI: <a href="https://doi.org/10.1109/DSP58604.2023.10167765">10.1109/DSP58604.2023.10167765</a></li>
+</ul>
+
+      </div>
+    
+  </div>
+</section>
+<section id="awards" class="py-12 border-t border-border-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+      <h2 class="text-3xl font-bold text-center mb-4 font-heading">Awards &amp; Recognition</h2>
+      <p class="text-lg text-center mb-8 italic"></p>
+      <div class="markdown-content max-w-3xl mx-auto">
+        <center>
+<p><strong>Excellent Oral Presentation Award (Session Award)</strong> — IEEE ICCT 2024<br>
+<strong>ICTP Travel Award &amp; Full Scholarship</strong> (2017, 2018) — Abdus Salam ICTP<br>
+<strong>National Scholarship (Ministry of Education, Cuba)</strong> (2010–2015)</p>
+</center>
+      </div>
+    
+  </div>
+</section>
+<section id="contact" class="py-12 bg-bg dark:bg-bg border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">Let's Connect</h2>
+
+    <div class="flex flex-col lg:flex-row justify-center gap-12">
+      
+      <div class="lg:w-1/2">
+        <div class="contact-card bg-bg dark:bg-bg p-8 rounded-lg shadow-lg border border-border-primary dark:border-border-primary card-hover">
+          <h3 class="text-xl font-semibold mb-6 text-text-primary dark:text-text-primary">Send me a message</h3>
+          <form id="contact-form" action="" method="POST" class="space-y-6">
+            <input type="text" name="_gotcha" style="display:none">
+            <div class="flex flex-col sm:flex-row gap-4">
+              <div class="flex-1">
+                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" required>
+              </div>
+              <div class="flex-1">
+                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" required>
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Subject</label>
+              <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" required>
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-text-secondary mb-1">Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-border-primary dark:border-border-primary rounded-lg focus:ring-primary focus:border-primary dark:bg-bg dark:text-text-primary" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="bg-gradient-primary text-white px-6 py-3 rounded-lg font-medium shadow-lg button-hover">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      
+      <div class="lg:w-1/2">
+        
+        <div class="contact-card bg-bg dark:bg-bg p-8 rounded-lg shadow-lg border border-border-primary dark:border-border-primary h-full card-hover">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-xl font-semibold text-text-primary dark:text-text-primary">Contact Information</h3>
+            
+          </div>
+          <p class="mb-6 text-gray-700 dark:text-text-secondary">Let&#39;s connect! I&#39;m always interested in hearing about new projects and opportunities.</p>
+          <div class="markdown-content text-gray-700 dark:text-text-secondary">
+          
+          </div>
+          <div class="space-y-4">
+            
+            <div class="flex items-start">
+              <div class="bg-second-lighter dark:bg-second-dark p-3 rounded-full mr-4">
+                <i class="fas fa-envelope text-second dark:text-second-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">Email</h4>
+                <a href="mailto:deijany.rodriguez.linares@liu.se" class="text-primary dark:text-white">deijany.rodriguez.linares@liu.se</a>
+              </div>
+            </div>
+            
+
+            
+            <div class="flex items-start">
+              <div class="bg-primary-lighter dark:bg-primary-dark p-3 rounded-full mr-4">
+                <i class="fab fa-linkedin-in text-primary dark:text-primary-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/deijany" target="_blank" rel="noopener noreferrer" class="text-primary dark:text-white">linkedin.com/in/deijany</a>
+              </div>
+            </div>
+            
+
+            
+            <div class="flex items-start">
+              <div class="bg-primary-lighter dark:bg-primary-dark p-3 rounded-full mr-4">
+                <i class="fab fa-github text-primary dark:text-primary-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">GitHub</h4>
+                <a href="https://github.com/deijany" target="_blank" rel="noopener noreferrer" class="text-primary dark:text-white">github.com/deijany</a>
+              </div>
+            </div>
+            
+
+            
+
+            
+            <div class="flex items-start">
+              <div class="bg-second-lighter dark:bg-second-dark p-3 rounded-full mr-4">
+                <i class="fas fa-map-marker-alt text-second dark:text-second-light"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-text-primary dark:text-text-primary">Location</h4>
+                <p class="text-gray-700 dark:text-text-tertiary">Linköping, Sweden</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="mt-8">
+            <h4 class="font-medium mb-3 text-text-primary dark:text-text-primary"></h4>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        
+        
+        const formspreeEndpoint = "https:\/\/formspree.io\/f\/xbdyvgbl";
+        
+        if (!formspreeEndpoint) {
+          showToast('⚠️ Contact form not configured. Please try again later.');
+          return;
+        }
+        
+        const formData = new FormData(form);
+    
+        try {
+          const response = await fetch(formspreeEndpoint, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+    
+          if (response.ok) {
+            showToast('✅ Thank you! I\'ll get back to you soon.');
+            form.reset();
+          } else {
+            showToast('❌ Error: Please try again.');
+          }
+        } catch (error) {
+          console.error(error);
+          showToast('⚠️ Failed to submit.');
+        }
+      });
+    }
+
+    const calendlyOpen = document.getElementById('calendly-open');
+    const calendlyModal = document.getElementById('calendly-modal');
+    const calendlyClose = document.getElementById('calendly-close');
+
+    if (calendlyOpen && calendlyModal && calendlyClose) {
+      calendlyOpen.addEventListener('click', function () {
+        calendlyModal.classList.remove('hidden');
+        calendlyModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      });
+
+      function closeCalendlyModal() {
+        calendlyModal.classList.add('hidden');
+        calendlyModal.classList.remove('flex');
+        document.body.style.overflow = 'auto';
+      }
+
+      calendlyClose.addEventListener('click', closeCalendlyModal);
+
+      calendlyModal.addEventListener('click', function (e) {
+        if (e.target === calendlyModal) {
+          closeCalendlyModal();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !calendlyModal.classList.contains('hidden')) {
+          closeCalendlyModal();
+        }
+      });
+    }
+  
+    function showToast(message) {
+      const toast = document.createElement('div');
+      toast.textContent = message;
+      toast.className = 'fixed bottom-6 right-6 bg-second dark:bg-second-light text-white px-4 py-2 rounded shadow-lg';
+      document.body.appendChild(toast);
+  
+      setTimeout(() => {
+        toast.remove();
+      }, 4000);
+    }
+  });
+</script>
+
+
+  
+
+
+    </main>
+
+    <footer class="bg-bg-secondary dark:bg-bg-secondary text-text-primary py-12 border-t border-border-primary">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <a href="/#home" class="text-xl font-bold text-text-primary font-heading">Deijany Rodriguez-Linares</a>
+        
+        
+        <p class="text-text-secondary dark:text-text-muted mt-1">
+          <i class="fas fa-map-marker-alt mr-2"></i>Linköping, Sweden
+        </p>
+        <a href="mailto:deijany.rodriguez.linares@liu.se" class="text-text-secondary dark:text-text-muted text-primary dark:text-primary-light mt-1 inline-block">
+          <i class="fas fa-envelope mr-2"></i>deijany.rodriguez.linares@liu.se
+        </a>
+        <div class="flex space-x-8 mt-6" data-animation="social">
+          
+          <a href="https://www.linkedin.com/in/deijany/" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-linkedin-in text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+          <a href="https://github.com/deijany" target="_blank" class="text-text-secondary dark:text-text-muted text-third dark:text-third-light transition-transform duration-300 hover:scale-125">
+            <i class="fab fa-github text-3xl text-text-primary dark:text-text-primary"></i>
+          </a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <div class="flex flex-wrap gap-2 justify-end">
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Signal Processing</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Hardware-Aware Algorithms</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Beyond-5G Communications</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Linearization</span>
+          
+          
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Synchronization</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-8 border-t border-border-primary text-center text-text-secondary dark:text-text-muted text-sm">
+      <p>© 2026 | Deijany Rodriguez Linares</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+
+<script>
+  
+  window.HUGO_COLOR_PALETTES = [
+    
+    {
+      name: "professional",
+      main_color: "#474A51",
+      second_color: "#E52521",
+      third_color: "#3CB043"
+    },
+    
+    {
+      name: "ocean",
+      main_color: "#1E40AF",
+      second_color: "#06B6D4",
+      third_color: "#10B981"
+    },
+    
+    {
+      name: "steel",
+      main_color: "#374151",
+      second_color: "#6B7280",
+      third_color: "#10B981"
+    },
+    
+    {
+      name: "navy",
+      main_color: "#1E3A8A",
+      second_color: "#3B82F6",
+      third_color: "#F59E0B"
+    },
+    
+    {
+      name: "slate",
+      main_color: "#475569",
+      second_color: "#0EA5E9",
+      third_color: "#F97316"
+    },
+    
+    {
+      name: "midnight",
+      main_color: "#0F172A",
+      second_color: "#8B5CF6",
+      third_color: "#06B6D4"
+    }
+    
+  ];
+  
+  
+  if (window.HUGO_COLOR_PALETTES && window.HUGO_COLOR_PALETTES.length > 0) {
+    console.log('🎨 Using color palettes from Hugo config:', window.HUGO_COLOR_PALETTES.length, 'palettes');
+  }
+</script>
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/dynamic-colors.js"></script>
+    <script src="/js/gsap-animations.js"></script>
+    <script src="/js/pexels-background.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+
+    
+    <script>
+        
+        if (localStorage.getItem('darkMode') !== 'false') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        
+        window.addEventListener('load', function() {
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+</body>
+</html>

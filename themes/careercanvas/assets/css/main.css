@@ -397,7 +397,7 @@
 
 @layer utilities {
   section[id] {
-    scroll-margin-top: 3rem;
+    scroll-margin-top: 2rem;
   }
 
   /* Simple fade-in animation states */
@@ -728,3 +728,14 @@
 .dark .sidebar-scroll {
   scrollbar-color: color-mix(in srgb, var(--color-primary-light) 40%, transparent) transparent;
 }
+
+/* tighten gap between sections in markdown content */
+.prose h2 { margin-bottom: 0.5rem !important; }
+.prose h2 + ul,
+.prose h2 + p,
+.prose hr + h2 { margin-top: 0.5rem !important; }
+.prose ul { margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; }
+.prose hr { margin: 0.75rem 0 !important; }
+.hero-section { background: transparent !important; }
+.hero-section .pexels-bg-container,
+.hero-section .pexels-overlay { display: block !important; opacity: 1 !important; }

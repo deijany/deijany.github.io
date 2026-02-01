@@ -25,14 +25,14 @@ positions:
       - "Focus on implementability, complexity analysis, and hardware-constrained algorithm design."
 
   - company: "University of Havana"
-    role: "Teaching and Research Assistant"
+    role: "Researcher and Teaching Assistant"
     period: "2019 – 2020"
     industry: "Research & Higher Education"
     location: "Havana, Cuba"
     company_description: "Higher Institute of Technologies and Applied Sciences (InSTEC)"
     bullet_points:
       - "Researched deep learning combined with Monte Carlo radiation transport to improve prediction accuracy for low-probability interaction events."
-      - "Teaching assistant for Numerical Mathematics~II and Fundamentals of Medical Physics."
+      - "Teaching assistant for Numerical Mathematics II and Fundamentals of Medical Physics."
 
   - company: "Center for State Control of Medicines, Equipment and Medical Devices (CECMED)"
     role: "Medical Physicist — QA and Modeling"

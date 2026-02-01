@@ -587,6 +587,16 @@
                 />
   </url><url>
     <loc>http://localhost:1313/awards/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/awards/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/awards/"
+                />
   </url><url>
     <loc>http://localhost:1313/tags/beam-analysis/</loc>
     <xhtml:link
@@ -721,6 +731,16 @@
                 />
   </url><url>
     <loc>http://localhost:1313/publications/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/publications/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/publications/"
+                />
   </url><url>
     <loc>http://localhost:1313/engineering/concrete_sections/</loc>
     <xhtml:link

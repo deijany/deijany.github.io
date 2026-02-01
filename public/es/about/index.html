@@ -8,10 +8,14 @@
             document.documentElement.classList.add('dark');
         }
     </script>
-    <script>
+    
+
+<script>
   window.PEXELS_API_KEY = "K5NOC1xEcfltFMyFONDScBzJgXCW6KXDS9bVU4xlaNUTsIxSsQabZp7p";
-  window.PEXELS_QUERIES = "[\"signal processing\",\"wireless communications\",\"5g base station\"]";
+  window.PEXELS_QUERIES = ["\"telecommunications tower outdoor infrastructure\"","\"5g base station antenna array\"","\"signal processing equipment\"","\"fourier transform signal spectrum plot\"","\"neural network architecture diagram\""];
 </script>
+
+
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,14 +28,14 @@
 </title>
 
 
-<meta name="description" content="Structural engineer and full stack developer specializing in AI/ML. Building security and compliance solutions for LLM-based AI agents at Fireraven using Python, React, and modern web technologies." />
+<meta name="description" content="Ph.D. researcher in signal processing focused on hardware-aware, low-complexity algorithms for synchronization, linearization, and equalization in modern wireless communication systems." />
 <meta name="author" content="Deijany Rodriguez Linares" />
 <link rel="canonical" href="http://localhost:1313/es/about/" />
 
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Sobre mí | Deijany RL" />
-<meta property="og:description" content="Structural engineer and full stack developer specializing in AI/ML. Building security and compliance solutions for LLM-based AI agents at Fireraven using Python, React, and modern web technologies." />
+<meta property="og:description" content="Ph.D. researcher in signal processing focused on hardware-aware, low-complexity algorithms for synchronization, linearization, and equalization in modern wireless communication systems." />
 <meta property="og:url" content="http://localhost:1313/es/about/" />
 <meta property="og:image" content="http://localhost:1313/images/face5.jpg">
 <meta property="og:image:width" content="1200" />
@@ -41,7 +45,7 @@
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Sobre mí | Deijany RL" />
-<meta name="twitter:description" content="Structural engineer and full stack developer specializing in AI/ML. Building security and compliance solutions for LLM-based AI agents at Fireraven using Python, React, and modern web technologies." />
+<meta name="twitter:description" content="Ph.D. researcher in signal processing focused on hardware-aware, low-complexity algorithms for synchronization, linearization, and equalization in modern wireless communication systems." />
 <meta name="twitter:image" content="http://localhost:1313/images/face5.jpg" />
 
 
@@ -128,7 +132,7 @@
     
     
     
-    <link rel="stylesheet" href="/css/main.css?v=1769890162" data-version="1769890162">
+    <link rel="stylesheet" href="/css/main.css?v=1769936762" data-version="1769936762">
     <style>
          
         body {
@@ -173,7 +177,14 @@
           
                       
             
-            <a href="/es/#technical" class="nav-link text-text-primary dark:text-text-primary">Tech Stack</a>
+            <a href="/es/#publications" class="nav-link text-text-primary dark:text-text-primary">Publicaciones</a>
+          
+          
+        
+          
+                      
+            
+            <a href="/es/#awards" class="nav-link text-text-primary dark:text-text-primary">Honores</a>
           
           
         
@@ -181,27 +192,6 @@
                       
             
             <a href="/es/#contact" class="nav-link text-text-primary dark:text-text-primary">Contacto</a>
-          
-          
-        
-          
-                      
-            
-            <a href="/es/engineering/" class="nav-link text-text-primary dark:text-text-primary">Ingeniería</a>
-          
-          
-        
-          
-                      
-            
-            <a href="/es/contributions/" class="nav-link text-text-primary dark:text-text-primary">Contribuciones</a>
-          
-          
-        
-          
-                      
-            
-            <a href="/es/blog/" class="nav-link text-text-primary dark:text-text-primary">Blog</a>
           
           
         
@@ -336,8 +326,16 @@
       
         
           
-          <a href="/es/#technical" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
-            Tech Stack
+          <a href="/es/#publications" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Publicaciones
+          </a>
+        
+        
+      
+        
+          
+          <a href="/es/#awards" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
+            Honores
           </a>
         
         
@@ -346,30 +344,6 @@
           
           <a href="/es/#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
             Contacto
-          </a>
-        
-        
-      
-        
-          
-          <a href="/es/engineering/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
-            Ingeniería
-          </a>
-        
-        
-      
-        
-          
-          <a href="/es/contributions/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
-            Contribuciones
-          </a>
-        
-        
-      
-        
-          
-          <a href="/es/blog/" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-text-primary dark:text-text-primary">
-            Blog
           </a>
         
         
@@ -586,14 +560,73 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col lg:flex-row gap-8">
       
-      <div class="w-full">
+      <div class="lg:w-2/3">
         <h1 class="text-3xl font-bold text-center mb-12 font-heading text-text-primary dark:text-text-primary">Sobre mí</h1>
         
         <div class="prose max-w-none prose-lg markdown-content dark:prose-invert prose-gray [&_iframe]:min-h-[600px] [&_iframe]:w-full [&_img+em]:block [&_img+em]:text-center [&_img+em]:font-bold">
-          
+          <!-- ---
+title: "About"
+type: "homepage"
+featured_image: "/images/felipe-cordero-profile.jpeg"
+intro: >-
+  Hi! I'm Felipe Cordero, a **structural engineer** 🏗️ and **full stack developer** 💻 with **14+ years** in AEC and software development, now specializing in **AI/ML** 🤖. My journey has taken me from **Chile to Montréal**, where I combine traditional engineering with modern technology to solve complex problems in engineering and automation. Currently, I'm an **AI and Full Stack Developer** at <a href="https://fireraven.ai" target="_blank" rel="noopener noreferrer"><strong>Fireraven</strong></a>, building security and compliance solutions for LLM-based AI agents. Recently, I was honored with the **Academic Excellence Scholarship** (Air Canada, Collège LaSalle Montréal, 2025) 🏆 for my achievements in AI/ML studies.
+
+study: >-
+  Currently based in **Montréal** 🇨🇦, I'm deepening my skills in **Artificial Intelligence and Machine Learning** 🤖 at **Collège LaSalle**. I work with **Python** 🐍, **PyTorch**, and **predictive modeling** 📊 to build intelligent systems that bridge the gap between engineering and data science.
+
+passion_title: "What I'm passionate about"
+passion_text: >-
+  I'm passionate about learning and applying **AI to real-world engineering challenges** 🔬. At <a href="https://fireraven.ai" target="_blank" rel="noopener noreferrer"><strong>Fireraven</strong></a>, I design and develop **scalable full-stack solutions** using **Python (FastAPI, NestJS)** and **React (Next.js, TypeScript)** for LLM-based security and compliance platforms, maintaining a **50/50 split between backend and frontend development** ⚖️. I implement and optimize **PostgreSQL databases**, apply **OOP principles and design patterns (DRY, YAGNI, SOLID)** to build maintainable codebases, and collaborate with **global distributed teams** in Agile Scrum environments 🤝. Previously at <a href="https://obralink.com" target="_blank" rel="noopener noreferrer"><strong>ObraLink</strong></a>, I led the development of **autonomous structural analysis tools** and **ML models** for concrete estimation 🏢. My goal is to create **innovative solutions** that have a real impact on the built environment.
+
+mix: >-
+  With experience in both **structural engineering** 🏗️ and **software development** 💻, I bring a **unique perspective** to technical challenges. I've led teams in building everything from **physical structures to scalable software systems**, always focusing on **practical, efficient solutions** ⚡. My **international background** and commitment to **continuous learning** drive me to bridge disciplines and deliver value across industries.
+
+personal: >-
+  Outside work, I enjoy **tennis** 🎾, **cooking** 👨‍🍳, **drums** 🥁, **swimming** 🏊‍♂️, and **photography** 📸. I also **volunteer at LaSalle College**, helping new students settle in and supporting the academic community 🤝.
+
+quickfacts:
+  - icon: "briefcase"
+    title: "Current Role"
+    value: "🤖 AI and Full Stack Developer at <a href=\"https://fireraven.ai\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Fireraven</strong></a>"
+  - icon: "graduation-cap"
+    title: "Education"
+    value: "🏗️ <a href=\"https://uchile.cl/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Chile</a>, **Bachelor's Degree in Civil Engineering**<br>🤖 <a href=\"https://lasallecollege.lcieducation.com/en\" target=\"_blank\" rel=\"noopener noreferrer\">Collège LaSalle Montréal</a>, **AEC: Artificial Intelligence and Machine Learning**"
+  - icon: "award"
+    title: "Recent Achievement"
+    value: "🏆 Recipient of the <a href=\"/blog/academic-excellence-recognition/\" target=\"_blank\" rel=\"noopener\">Academic Excellence Scholarship</a> 🎓 sponsored by ✈️ Air Canada at Collège LaSalle Montréal (2025) 🎉"
+  - icon: "language"
+    title: "Languages"
+    value: |
+      - 🇬🇧 English (IELTS C1)
+      - 🇪🇸 Spanish (Native)
+      - 🇫🇷 French (TCF B2)
+  - icon: "heart"
+    title: "Interests"
+    value: |
+      - ♟️ Chess
+      - 🎾 Tennis
+      - 🚴 Cycling
+      - 🏊‍♂️ Swimming
+      - 👨‍🍳 Cooking
+      - 🥁 Drumming
+      - 📸 Photography
+      - ✈️ Traveling
+      - 📚 Reading
+--- -->
         </div>
       </div>
 
+      
+      
+      <div class="lg:w-1/3">
+        <div class="sticky top-24 max-h-[calc(100vh-8rem)] flex flex-col">
+          <h2 class="text-xl font-bold mb-4 text-text-primary dark:text-text-primary flex-shrink-0">Contenido relacionado</h2>
+          <div class="space-y-3 pr-2 overflow-y-auto flex-1 sidebar-scroll">
+            
+            
+          </div>
+        </div>
+      </div>
       
     </div>
   </div>
@@ -609,7 +642,7 @@
         
         
         <p class="text-text-secondary dark:text-text-muted mt-1">
-          <i class="fas fa-map-marker-alt mr-2"></i>Montreal, Canadá
+          <i class="fas fa-map-marker-alt mr-2"></i>Linköping, Suecia
         </p>
         <a href="mailto:deijany.rodriguez.linares@liu.se" class="text-text-secondary dark:text-text-muted text-primary dark:text-primary-light mt-1 inline-block">
           <i class="fas fa-envelope mr-2"></i>deijany.rodriguez.linares@liu.se
@@ -630,19 +663,19 @@
         <div class="flex flex-wrap gap-2 justify-end">
           
           
-          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Soluciones de IA/ML</span>
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Procesamiento de Señales</span>
           
           
-          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Software de Ingeniería</span>
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Algoritmos adaptados al hardware</span>
           
           
-          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">I&#43;D e Innovación</span>
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Comunicaciones Beyond-5G</span>
           
           
-          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Liderazgo Técnico</span>
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Linealización</span>
           
           
-          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Tecnología en Construcción</span>
+          <span class="bg-bg-tertiary dark:bg-bg-tertiary text-text-primary px-3 py-1 rounded-full text-sm font-semibold shadow-md">Sincronización</span>
           
         </div>
       </div>

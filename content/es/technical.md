@@ -1,11 +1,12 @@
 ---
+draft: true
 title: "Tech Stack"
 type: "homepage"
 intro: >-
-  Experiencia técnica que abarca desarrollo de software, IA/ML y tecnologías de ingeniería.
+  Technical expertise spanning software development, AI/ML, and engineering technologies.
 
 technical_groups:
-  - title: "Lenguajes de Programación"
+  - title: "Programming Languages"
     icon: "code"
     color_scheme: "blue"
     skills:
@@ -19,7 +20,7 @@ technical_groups:
         name: "TypeScript"
         devicon_name: "typescript"
 
-  - title: "Fundamentos Web"
+  - title: "Web Fundamentals"
     icon: "globe"
     color_scheme: "blue"
     skills:
@@ -33,7 +34,7 @@ technical_groups:
         name: "Tailwind CSS"
         devicon_name: "tailwindcss"
 
-  - title: "Lenguajes de Consulta"
+  - title: "Query Languages"
     icon: "database"
     color_scheme: "green"
     skills:
@@ -43,13 +44,21 @@ technical_groups:
       - icon: "server"
         name: "NoSQL"
 
-  - title: "Web y UI"
-    icon: "palette"
-    color_scheme: "purple"
+  - title: "Backend Frameworks"
+    icon: "server"
+    color_scheme: "blue"
     skills:
       - icon: "bolt"
         name: "FastAPI"
         devicon_name: "fastapi"
+      - icon: "node-js"
+        name: "NestJS"
+        devicon_name: "nestjs"
+
+  - title: "Frontend Frameworks"
+    icon: "palette"
+    color_scheme: "purple"
+    skills:
       - icon: "atom"
         name: "React"
         devicon_name: "react"
@@ -78,7 +87,7 @@ technical_groups:
         name: "Bootstrap"
         devicon_name: "bootstrap"
 
-  - title: "Ciencia de Datos"
+  - title: "Data Science"
     icon: "chart-line"
     color_scheme: "orange"
     skills:
@@ -99,7 +108,7 @@ technical_groups:
       - icon: "file-pdf"
         name: "ReportLab"
 
-  - title: "Frameworks de IA/ML"
+  - title: "AI/ML Frameworks"
     icon: "brain"
     color_scheme: "purple"
     skills:
@@ -121,7 +130,7 @@ technical_groups:
         name: "Keras"
         devicon_name: "keras"
 
-  - title: "Herramientas de Desarrollo"
+  - title: "Development Tools"
     icon: "tools"
     color_scheme: "green"
     skills:
@@ -165,13 +174,15 @@ technical_groups:
         name: "Hugo"
         devicon_name: "hugo"
 
-  - title: "Bases de Datos"
+  - title: "Databases"
     icon: "database"
     color_scheme: "blue"
     skills:
       - icon: "elephant"
         name: "PostgreSQL"
         devicon_name: "postgresql"
+      - icon: "database"
+        name: "SQLModel"
       - icon: "database"
         name: "MySQL"
         devicon_name: "mysql"
@@ -188,7 +199,7 @@ technical_groups:
         name: "Firebase"
         devicon_name: "firebase"
 
-  - title: "Software de Ingeniería"
+  - title: "Engineering Software"
     icon: "building"
     color_scheme: "red"
     skills:
@@ -210,4 +221,3 @@ technical_groups:
         name: "MATLAB"
         devicon_name: "matlab"
 --- 
-

@@ -19,7 +19,7 @@ defaultContentLanguageInSubdir = false
     languageName = "English"
     weight = 1
     [languages.en.params]
-      tagline = "Signal Processing,. Sampling frequency synchronization,. Linearization,. Equalization."
+      tagline = "Signal Processing,. sampling frequency synchronization,. linearization,. and equalization."
       hero_description = "Ph.D. candidate in Communication Systems focusing on hardware-aware, low-complexity signal processing for modern wireless systems."
       hero_location = "Linköping, Sweden"
       collab_tags = [
@@ -34,15 +34,15 @@ defaultContentLanguageInSubdir = false
     languageName = "Español"
     weight = 2
     [languages.es.params]
-      tagline = "Ingeniero. Desarrollador de Software. Solucionador de problemas."
-      hero_description = "Ingeniero estructural y desarrollador de software con más de 14 años en Arquitectura, Ingeniería y Construcción (AEC), ampliando experiencia en IA/ML para crear soluciones inteligentes a problemas de ingeniería complejos."
-      hero_location = "Montreal, Canadá"
+      tagline = "Procesamiento de Señales,. sincronización de frecuencia de muestreo,. linealización,. y ecualización."
+      hero_description = "Doctorando en Sistemas de Comunicaciones enfocado en procesamiento de señales con baja complejidad para sistemas inalámbricos modernos."
+      hero_location = "Linköping, Suecia"
       collab_tags = [
-        "Soluciones de IA/ML",
-        "Software de Ingeniería",
-        "I+D e Innovación",
-        "Liderazgo Técnico",
-        "Tecnología en Construcción"
+        "Procesamiento de Señales",
+        "Algoritmos adaptados al hardware",
+        "Comunicaciones Beyond-5G",
+        "Linealización",
+        "Sincronización"
       ]
 
 [build]
@@ -59,7 +59,7 @@ formspree_endpoint = "https://formspree.io/f/xbdyvgbl"
 
 og_image = "images/face5.jpg"
 
-description = "Structural engineer and full stack developer specializing in AI/ML. Building security and compliance solutions for LLM-based AI agents at Fireraven using Python, React, and modern web technologies."
+description = "Ph.D. researcher in signal processing focused on hardware-aware, low-complexity algorithms for synchronization, linearization, and equalization in modern wireless communication systems."
 
 linkedin_url = "https://www.linkedin.com/in/deijany"
 linkedin_text = "linkedin.com/in/deijany"
@@ -204,10 +204,23 @@ api_key = "K5NOC1xEcfltFMyFONDScBzJgXCW6KXDS9bVU4xlaNUTsIxSsQabZp7p"
 #     "data visualization"
 #   ]
 
-[params.pexels.queries]
-home = ["signal processing", "wireless communications", "5g base station"]
-projects = ["electronics","signal processing","wireless communications"]
-blog = ["research","computer","data"]
+[params.pexels.queries] 
+home = [
+  "\"telecommunications tower outdoor infrastructure\"",
+  "\"5g base station antenna array\"",
+  "\"signal processing equipment\"",
+  "\"fourier transform signal spectrum plot\"",
+  "\"neural network architecture diagram\""
+  ]
+projects = [
+  "electronics lab",
+  "signal processing hardware",
+  "telecommunication equipment"
+]
+blog = [
+  "electronics lab",
+  "wireless communications"
+]
 
 
 # # This section configures the random background images for the hero section

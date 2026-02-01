@@ -90,30 +90,31 @@ class PexelsBackground {
         }
 
         const data = await response.json();
-        
-        if (data.photos && data.photos.length > 0) {
-            // Filter out already used images
-            const availablePhotos = data.photos.filter(photo => !this.usedImages.has(photo.id));
-            
-            // If all photos are used, reset the used images set (after many images)
-            if (availablePhotos.length === 0) {
-                this.usedImages.clear();
-                const randomPhoto = data.photos[Math.floor(Math.random() * data.photos.length)];
-                this.currentImage = randomPhoto.src.large2x || randomPhoto.src.large || randomPhoto.src.medium;
-                this.currentPhoto = randomPhoto;
-                this.usedImages.add(randomPhoto.id);
-            } else {
-                // Pick a random photo from available ones
-                const randomPhoto = availablePhotos[Math.floor(Math.random() * availablePhotos.length)];
-                this.currentImage = randomPhoto.src.large2x || randomPhoto.src.large || randomPhoto.src.medium;
-                this.currentPhoto = randomPhoto;
-                this.usedImages.add(randomPhoto.id);
-            }
-            
-            this.applyBackgroundImage();
-        } else {
-            throw new Error('No photos found');
+
+        const banned = /(flower|rainbow|park|beach|people|traffic light|lotus|biology|gender|stock|market|laboratory|microscope|medical|medicine|blood|test tube|pipette|vial|flask|cell culture|clinic|hospital)/i;
+
+        const photos = (data.photos || []).filter(p =>
+        !banned.test(`${p.alt || ""} ${p.photographer || ""}`)
+        );
+
+        const availablePhotos = photos.filter(p => !this.usedImages.has(p.id));
+
+        if (availablePhotos.length === 0 && photos.length === 0) {
+        throw new Error("No photos found");
         }
+
+        if (availablePhotos.length === 0) {
+        this.usedImages.clear();
+        }
+
+        const pool = availablePhotos.length ? availablePhotos : photos;
+        const randomPhoto = pool[Math.floor(Math.random() * pool.length)];
+
+        this.currentImage = randomPhoto.src.large2x || randomPhoto.src.large || randomPhoto.src.medium;
+        this.currentPhoto = randomPhoto;
+        this.usedImages.add(randomPhoto.id);
+
+        this.applyBackgroundImage();
     }
 
     setCredit(photo) {

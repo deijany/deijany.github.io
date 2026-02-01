@@ -7,11 +7,15 @@ intro: >-
 domains:
   - icon: "signal"
     title: "Beyond-5G Baseband Signal Processing"
-    description: "Ph.D. research on low-complexity, hardware-aware baseband signal processing algorithms within the ELLIIT project for beyond-5G wireless systems."
+    description: "Ph.D. research on low-complexity, hardware-aware baseband signal processing algorithms within the ELLIIT project Baseband Processing for Beyond 5G Wireless."
 
   - icon: "wave-square"
     title: "Sampling-Frequency Synchronization"
     description: "Development of efficient sampling-frequency offset estimation and compensation methods for wideband communication systems under strict hardware constraints."
+
+  - icon: "project-diagram"
+    title: "Nonlinear System Modeling"
+    description: "Modeling and analysis of nonlinear and mixed-signal systems for communication applications, with emphasis on implementable representations and performance–complexity trade-offs."
 
   - icon: "microchip"
     title: "ADC Linearization"
@@ -21,9 +25,13 @@ domains:
     title: "DAC Equalization"
     description: "Equalization of DAC frequency-response distortions using linear-phase FIR filters across multiple Nyquist bands."
 
-  - icon: "calculator"
+  - icon: "chart-line"
     title: "Model-Order & Complexity Analysis"
     description: "Derivation of closed-form model-order and complexity predictions using symbolic regression and structured optimization."
+
+  - icon: "brain"
+    title: "Learning-Inspired Signal Processing"
+    description: "Use of learning-inspired and unsupervised methods to tune models, discover structure, and improve robustness when labeled data is limited."
 
   - icon: "chalkboard-teacher"
     title: "Teaching assistant"

@@ -1,7 +1,7 @@
 ---
+draft: true
 title: "Seismic Performance of Reinforced Concrete Wall Structures: A Comprehensive Study"
 date: 2025-06-28
-draft: false
 description: "Exploring my thesis research on the seismic performance of reinforced concrete wall structures commonly found in Chile, using advanced fiber models and time-history analyses to understand structural behavior under earthquake loads."
 featured_image: "/images/thesis/thesis_image.png"
 tags: ["thesis", "structural-engineering", "seismic-analysis", "reinforced-concrete", "chile", "earthquake-engineering", "fiber-models", "research"]

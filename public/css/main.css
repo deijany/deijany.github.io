@@ -2104,6 +2104,10 @@ body {
   max-width: 42rem;
 }
 
+.max-w-3xl{
+  max-width: 48rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
 }
@@ -2630,11 +2634,6 @@ body {
   color: rgb(6 182 212 / var(--tw-text-opacity, 1));
 }
 
-.text-gray-600{
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
-}
-
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
@@ -2819,7 +2818,7 @@ body {
 }
 
 section[id] {
-    scroll-margin-top: 3rem;
+    scroll-margin-top: 2rem;
   }
 
 /* Simple fade-in animation states */
@@ -3164,6 +3163,23 @@ section[data-animate].fade-in-visible {
 .dark .sidebar-scroll {
   scrollbar-color: color-mix(in srgb, var(--color-primary-light) 40%, transparent) transparent;
 }
+
+/* tighten gap between sections in markdown content */
+
+.prose h2 { margin-bottom: 0.5rem !important; }
+
+.prose h2 + ul,
+.prose h2 + p,
+.prose hr + h2 { margin-top: 0.5rem !important; }
+
+.prose ul { margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; }
+
+.prose hr { margin: 0.75rem 0 !important; }
+
+.hero-section { background: transparent !important; }
+
+.hero-section .pexels-bg-container,
+.hero-section .pexels-overlay { display: block !important; opacity: 1 !important; }
 
 .dark\:prose-invert:is(.dark *){
   --tw-prose-body: var(--tw-prose-invert-body);

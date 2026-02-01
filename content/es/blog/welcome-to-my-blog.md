@@ -1,7 +1,7 @@
 ---
+draft: true
 title: "Welcome to My Blog"
 date: 2025-05-07
-draft: false
 description: "Welcome to my blog where I share my journey of creating this website using Hugo and the CareerCanvas theme, along with insights about structural engineering, software development, and AI in construction."
 # featured_image: "/images/personal_web_demo.png"
 tags: ["blog", "welcome", "hugo", "web-development", "careercanvas"]

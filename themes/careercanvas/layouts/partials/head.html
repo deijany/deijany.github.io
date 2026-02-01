@@ -1,7 +1,17 @@
+{{/*  <script>
+  window.PEXELS_API_KEY = "{{ .Site.Params.pexels.api_key }}";
+  window.PEXELS_QUERIES = {{ (index .Site.Params.pexels.queries "home") | jsonify | safeJS }};
+  if (typeof window.PEXELS_QUERIES === "string") {
+    try { window.PEXELS_QUERIES = JSON.parse(window.PEXELS_QUERIES); } catch (e) { window.PEXELS_QUERIES = []; }
+  }
+</script>  */}}
+
 <script>
   window.PEXELS_API_KEY = "{{ .Site.Params.pexels.api_key }}";
-  window.PEXELS_QUERIES = {{ (index .Site.Params.pexels.queries "home") | jsonify }};
+  window.PEXELS_QUERIES = {{ .Site.Params.pexels.queries.home | jsonify | safeJS }};
 </script>
+
+
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />

@@ -9,7 +9,7 @@ intro: >-
 study: >-
   I received a B.Sc. in Nuclear Engineering (2015), a Postgraduate Diploma in Medical Physics (2016), and an M.Sc. in Nuclear Engineering (2018) from the Higher Institute of Technologies and Applied Sciences (InSTEC), University of Havana, Cuba. I am currently pursuing the Ph.D. degree in Communication Systems at the Department of Electrical Engineering, Linköping University, Sweden.
 
-  Previously, I worked as a Junior Medical Physicist at CECMED (2015–2018) and as a Research Associate at InSTEC (2019–2020). Since 2019, I have been a Junior Associate at ICTP (Trieste, Italy).
+  Previously, I worked as a Junior Medical Physicist at CECMED (2015–2018) and as a Research Associate at InSTEC (2019–2020). From 2019–2024, I was a Junior Associate at The Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy.
 
 # study: >-
 #   I am currently completing my Ph.D. at **Linköping University (Sweden)**, with an expected graduation date of **April 2026**. My research is conducted within the **ELLIIT / Beyond-5G baseband processing** context, addressing challenges in wideband communication systems, ADC/DAC non-idealities, and efficient digital signal processing. 

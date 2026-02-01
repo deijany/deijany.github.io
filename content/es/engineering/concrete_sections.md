@@ -1,6 +1,7 @@
 ---
+draft: true
 title: "Reinforced Concrete Walls Sectional Analysis"
-description: "Programa avanzado para análisis preciso de secciones de muros compuestos con diagramas de interacción 3D, modificación de refuerzo y análisis momento-curvatura."
+description: "Advanced program for accurate analysis of composite wall sections with 3D interaction diagrams, reinforcement modification, and moment-curvature analysis."
 featured_image: "/images/album_sections/demo.png"
 tags: ["structural-engineering", "design-tools", "concrete-design", "section-analysis", "walls"]
 ---

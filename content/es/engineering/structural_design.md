@@ -1,6 +1,7 @@
 ---
+draft: true
 title: "Structural Design"
-description: "Servicios profesionales de diseño estructural para proyectos residenciales, industriales e infraestructura utilizando herramientas avanzadas como ETABS, SAFE, SAP2000 y OpenSees."
+description: "Professional structural design services for residential, industrial, and infrastructure projects using advanced software tools including ETABS, SAFE, SAP2000, and OpenSees."
 featured_image: "/images/album_modeling/modelo1-557x700.png"
 tags: ["structural-engineering", "design-tools", "etabs", "safe", "sap2000", "opensees"]
 ---

@@ -1,7 +1,7 @@
 ---
+draft: true
 title: "Academic Excellence Recognition: A Journey of Faith and Perseverance"
 date: 2025-05-18
-draft: false
 description: "Reflecting on receiving recognition for academic excellence from Air Canada during my graduation from the Artificial Intelligence and Machine Learning program at Collège LaSalle, Montréal."
 featured_image: "/images/blog/scholarship_letter.jpg"
 tags: ["academic", "ai", "machine-learning", "education", "personal-journey"]

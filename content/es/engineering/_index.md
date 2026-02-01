@@ -1,25 +1,24 @@
 +++
-title = "Ingeniería Estructural"
-description = "Explora mis herramientas y soluciones de ingeniería estructural para los desafíos de la construcción moderna."
+title = "Structural Engineering"
+description = "Explore my structural engineering tools and solutions for modern construction challenges."
 type = "list"
 # menu = "main"
 weight = 50
 +++
 
-## Herramientas y Soluciones de Ingeniería Estructural
+## Structural Engineering Tools & Solutions
 
-Aquí encontrarás una colección de herramientas y soluciones que he desarrollado para abordar desafíos estructurales complejos en la industria de la construcción actual.
+Here you'll find a collection of tools and solutions I've developed to tackle complex structural challenges in today's construction industry.
 
-### Qué encontrarás aquí
+### What You'll Find Here
 
-- **Herramientas de Diseño Automatizado**: Calculadoras optimizadas para problemas estructurales comunes
-- **Soluciones de Monitoreo en Tiempo Real**: Sistemas que entregan información estructural durante la construcción
-- **Herramientas de Integración BIM**: Software que conecta diseño y construcción
-- **Visualizaciones Interactivas**: Herramientas web para entender mejor el comportamiento estructural
+- **Automated Design Tools**: Streamlined calculators for common structural problems
+- **Real-Time Monitoring Solutions**: Systems that provide live structural insights during construction
+- **BIM Integration Tools**: Software that bridges the gap between design and construction
+- **Interactive Visualizations**: Web-based tools for better understanding of structural behavior
 
-Cada herramienta representa mi compromiso por hacer más accesibles y prácticas las ideas complejas de ingeniería para aplicaciones reales.
+Each tool represents my commitment to making complex engineering concepts more accessible and practical for real-world applications.
 
 ---
 
-*Explora las herramientas a continuación o usa las etiquetas para encontrar soluciones que se ajusten a tus necesidades.*
-
+*Browse through the tools below or use the tags to find specific solutions that match your needs.* 

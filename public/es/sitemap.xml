@@ -718,6 +718,30 @@
                 href="http://localhost:1313/es/tags/post-processing/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/awards/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/awards/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/awards/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/publications/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/publications/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="http://localhost:1313/es/publications/"
+                />
+  </url><url>
     <loc>http://localhost:1313/es/engineering/concrete_sections/</loc>
     <xhtml:link
                 rel="alternate"

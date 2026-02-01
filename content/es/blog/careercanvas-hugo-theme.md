@@ -1,7 +1,7 @@
 ---
+draft: true
 title: "Introducing CareerCanvas: A Modern Hugo Theme for Technical Portfolios"
 date: 2025-05-18
-draft: false
 description: "A comprehensive guide to CareerCanvas, a modern Hugo theme designed for technical professionals. Learn about its features, installation, and how it can help showcase your professional portfolio."
 featured_image: "/images/blog/career_canvas_demo.png"
 tags: ["hugo", "theme", "portfolio", "web-development"]

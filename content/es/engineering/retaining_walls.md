@@ -1,6 +1,7 @@
 ---
+draft: true
 title: "Retaining Walls Designer"
-description: "Aplicación web moderna para diseño y análisis de muros de contención de concreto en voladizo, con definición de parámetros, dimensionamiento, diseño de refuerzo y visualización interactiva."
+description: "Modern web application for cantilever concrete retaining wall design and analysis, featuring parameter definition, dimensioning, reinforcement design, and interactive visualization."
 featured_image: "/images/album_retain_walls/demo.png"
 tags: ["structural-engineering", "design-tools", "retaining-walls", "python", "streamlit"]
 ---

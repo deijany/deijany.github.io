@@ -1,7 +1,7 @@
 ---
+draft: true
 title: "Real-Time Slab Deflection Analysis: Bridging BIM and Structural Engineering"
 date: 2025-05-11
-draft: false
 description: "Exploring the development of an automated real-time slab deflection analysis tool that combines BIM data with structural engineering principles."
 featured_image: "/images/blog/2025-05-18_21-09 - obralink_slabs .png"
 tags: ["bim", "python", "structural-engineering", "automation", "construction-technology", "real-time-analysis"]

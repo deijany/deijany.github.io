@@ -22,10 +22,10 @@ personal: >-
 quickfacts:
   - icon: "graduation-cap"
     title: "Posición Actual"
-    value: "Doctorando, Sistemas de Comunicaciones — Universidad de Linköping"
+    value: "Doctorado (defendido), Sistemas de Comunicaciones — Universidad de Linköping"
 
   - icon: "calendar"
-    title: "Graduación"
+    title: "Defensa del Doctorado"
     value: "17 de abril de 2026"
 
   - icon: "cogs"

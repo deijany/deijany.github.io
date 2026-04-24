@@ -28,10 +28,10 @@ personal: >-
 quickfacts:
   - icon: "graduation-cap"
     title: "Current Position"
-    value: "Ph.D. Candidate, Communication Systems — Linköping University"
+    value: "Ph.D. (defended), Communication Systems"
 
   - icon: "calendar"
-    title: "Defended Graduation"
+    title: "Ph.D. Defense"
     value: "April 17, 2026"
 
   - icon: "cogs"

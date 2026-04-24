@@ -31,7 +31,7 @@ quickfacts:
     value: "Ph.D. Candidate, Communication Systems — Linköping University"
 
   - icon: "calendar"
-    title: "Expected Graduation"
+    title: "Defended Graduation"
     value: "April 17, 2026"
 
   - icon: "cogs"

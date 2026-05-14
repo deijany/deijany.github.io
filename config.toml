@@ -20,7 +20,7 @@ defaultContentLanguageInSubdir = false
     weight = 1
     [languages.en.params]
       tagline = "Signal Processing, sampling frequency synchronization, linearization, and equalization."
-      hero_description = "Ph.D. candidate in Communication Systems focusing on hardware-aware, low-complexity signal processing for modern wireless systems."
+      hero_description = "Researcher in Communication Systems (Ph.D. defended April 2026) — hardware-aware, low-complexity signal processing for modern wireless systems."
       hero_location = "Linköping, Sweden"
       collab_tags = [
         "Signal Processing",
@@ -35,7 +35,7 @@ defaultContentLanguageInSubdir = false
     weight = 2
     [languages.es.params]
       tagline = "Procesamiento de Señales, sincronización de frecuencia de muestreo, linealización y ecualización."
-      hero_description = "Doctorando en Sistemas de Comunicaciones enfocado en procesamiento de señales con baja complejidad para sistemas inalámbricos modernos."
+      hero_description = "Investigador en Sistemas de Comunicaciones (Doctorado defendido en abril de 2026) — procesamiento de señales de baja complejidad para sistemas inalámbricos modernos."
       hero_location = "Linköping, Suecia"
       collab_tags = [
         "Procesamiento de Señales",

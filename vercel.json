@@ -6,5 +6,8 @@
     "deploymentEnabled": {
       "main": true
     }
+  },
+  "env": {
+    "HUGO_VERSION": "0.125.7"
   }
 }

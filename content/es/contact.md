@@ -2,6 +2,6 @@
 title: "Contact"
 type: "homepage"
 intro: >-
-  Let's connect! I'm always interested in hearing about new projects and opportunities.
+  ¡Conectemos! Siempre estoy interesado en escuchar sobre nuevos proyectos y oportunidades.
 formspree_endpoint: "https://formspree.io/f/xbdyvgbl"
 ---

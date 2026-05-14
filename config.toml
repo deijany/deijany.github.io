@@ -93,6 +93,14 @@ url = "https://www.linkedin.com/in/deijany/"
 icon = "github"
 url = "https://github.com/deijany"
 
+[[params.social]]
+icon = "google-scholar"
+url = "https://scholar.google.com/citations?user=2jsvgMYAAAAJ&hl=en"
+
+[[params.social]]
+icon = "orcid"
+url = "https://orcid.org/0009-0004-1846-9496"
+
 sectionPagesMenu = 'main'
 
 

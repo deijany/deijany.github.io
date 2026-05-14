@@ -33,9 +33,9 @@ domains:
     title: "Procesamiento de Señales Inspirado en Aprendizaje"
     description: "Uso de métodos inspirados en aprendizaje y técnicas no supervisadas para ajustar modelos, descubrir estructura y mejorar la robustez cuando los datos etiquetados son limitados."
 
-  - icon: "chalkboard-teacher"
-    title: "Asistencia Docente"
-    description: "Asistente de docencia en los cursos Procesamiento de Señales para Comunicaciones, Filtros Analógicos y Filtros Digitales."
+  - icon: "microchip"
+    title: "Implementación en Hardware"
+    description: "Diseño RTL y validación en FPGA (Verilog, Lattice ECP5) para verificación experimental de algoritmos DSP. Diseño de algoritmos con restricciones de punto fijo y hardware."
 
   # - icon: "globe"
   #   title: "Languages & International Experience"

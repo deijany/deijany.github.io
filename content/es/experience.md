@@ -11,7 +11,7 @@ resume_label: "Descargar CV"
 positions:
   - company: "Universidad de Linköping"
     company_url: "https://liu.se"
-    role: "Doctorando — Sistemas de Comunicaciones"
+    role: "Investigador Doctoral — Sistemas de Comunicaciones"
     period: "2021 – Presente"
     industry: "Investigación y Educación Superior"
     location: "Linköping, Suecia"
@@ -23,6 +23,8 @@ positions:
       - "Ecualización de distorsiones en la respuesta en frecuencia de DACs mediante filtros FIR de fase lineal en múltiples bandas de Nyquist."
       - "Derivación de estimaciones analíticas del orden de modelo y la complejidad computacional mediante regresión simbólica y optimización estructurada."
       - "Énfasis en implementabilidad, análisis de complejidad y diseño de algoritmos bajo restricciones de hardware."
+      - "Diseño RTL y validación en FPGA (Lattice ECP5) para verificación experimental."
+      - "Asistente de docencia y/o laboratorio en los cursos Procesamiento de Señales para Comunicaciones, Filtros Analógicos y Filtros Digitales."
 
   - company: "University of Havana"
     role: "Investigador y Asistente de Docencia"

@@ -7,7 +7,7 @@ intro: >-
   PhD researcher in signal processing working on estimation, compensation, synchronization, linearization, and equalization, with a strong focus on robustness under non-ideal hardware effects and noisy conditions. Develops hardware-aware, low-complexity algorithms, including neural-network–inspired linearizers, alongside classical model-based techniques.
 
 study: >-
-  I received a B.Sc. in Nuclear Engineering (2015), a Postgraduate Diploma in Medical Physics (2016), and an M.Sc. in Nuclear Engineering (2018) from the Higher Institute of Technologies and Applied Sciences (InSTEC), University of Havana, Cuba. I am currently pursuing the Ph.D. degree in Communication Systems at the Department of Electrical Engineering, Linköping University, Sweden.
+  I received a B.Sc. in Nuclear Engineering (2015), a Postgraduate Diploma in Medical Physics (2016), and an M.Sc. in Nuclear Engineering (2018) from the Higher Institute of Technologies and Applied Sciences (InSTEC), University of Havana, Cuba. I received the Ph.D. degree in Communication Systems from the Department of Electrical Engineering, Linköping University, Sweden (2026).
 
   Previously, I worked as a Junior Medical Physicist at CECMED (2015–2018) and as a Research Associate at InSTEC (2019–2020). From 2019–2024, I was a Junior Associate at The Abdus Salam International Centre for Theoretical Physics (ICTP), Trieste, Italy.
 
@@ -28,11 +28,7 @@ personal: >-
 quickfacts:
   - icon: "graduation-cap"
     title: "Current Position"
-    value: "Ph.D. (defended), Communication Systems"
-
-  - icon: "calendar"
-    title: "Ph.D. Defense"
-    value: "April 17, 2026"
+    value: "Ph.D. (defended April 17, 2026), Communication Systems"
 
   - icon: "cogs"
     title: "Core Expertise"
@@ -40,7 +36,7 @@ quickfacts:
 
   - icon: "code"
     title: "Tools & Languages"
-    value: "Python · MATLAB · C++ · PyTorch · NumPy · SciPy · Linux"
+    value: "Python · MATLAB · C++ · PyTorch · TensorFlow · NumPy · SciPy · Verilog · Linux"
 
   - icon: "language"
     title: "Languages"

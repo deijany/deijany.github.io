@@ -7,7 +7,7 @@ intro: >-
   Investigador doctoral en procesamiento de señales que trabaja en estimación, compensación, sincronización, linealización y ecualización, con un fuerte énfasis en la robustez frente a efectos de hardware no ideales y condiciones de ruido. Desarrolla algoritmos de baja complejidad y conscientes del hardware, incluyendo linealizadores inspirados en redes neuronales, junto con técnicas basadas en modelos clásicos.
 
 study: >-
-  Obtuve la Licenciatura en Ingeniería Nuclear (2015), el Diploma de Posgrado en Física Médica (2016) y la Maestría en Ingeniería Nuclear (2018) en el Instituto Superior de Tecnologías y Ciencias Aplicadas (InSTEC), Universidad de La Habana, Cuba. Actualmente curso el doctorado en Sistemas de Comunicaciones en el Departamento de Ingeniería Eléctrica de la Universidad de Linköping, Suecia.
+  Obtuve la Licenciatura en Ingeniería Nuclear (2015), el Diploma de Posgrado en Física Médica (2016) y la Maestría en Ingeniería Nuclear (2018) en el Instituto Superior de Tecnologías y Ciencias Aplicadas (InSTEC), Universidad de La Habana, Cuba. Obtuve el doctorado en Sistemas de Comunicaciones en el Departamento de Ingeniería Eléctrica de la Universidad de Linköping, Suecia (2026).
 
   Previamente, trabajé como Físico Médico Junior en CECMED (2015–2018) y como Investigador Asociado en InSTEC (2019–2020). De 2019 a 2024, fui Asociado Junior en el Centro Internacional Abdus Salam de Física Teórica (ICTP), en Trieste, Italia.
 
@@ -22,11 +22,7 @@ personal: >-
 quickfacts:
   - icon: "graduation-cap"
     title: "Posición Actual"
-    value: "Doctorado (defendido), Sistemas de Comunicaciones — Universidad de Linköping"
-
-  - icon: "calendar"
-    title: "Defensa del Doctorado"
-    value: "17 de abril de 2026"
+    value: "Doctorado (defendido el 17 de abril de 2026), Sistemas de Comunicaciones"
 
   - icon: "cogs"
     title: "Especialidad Principal"
@@ -34,7 +30,7 @@ quickfacts:
 
   - icon: "code"
     title: "Herramientas y Lenguajes"
-    value: "Python · MATLAB · C++ · PyTorch · NumPy · SciPy · Linux"
+    value: "Python · MATLAB · C++ · PyTorch · TensorFlow · NumPy · SciPy · Verilog · Linux"
 
   - icon: "language"
     title: "Idiomas"

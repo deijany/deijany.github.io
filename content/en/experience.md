@@ -11,7 +11,7 @@ resume_label: "Download CV"
 positions:
   - company: "Linköping University"
     company_url: "https://liu.se"
-    role: "Ph.D. Candidate — Communication Systems"
+    role: "Ph.D. Researcher — Communication Systems"
     period: "2021 – Present"
     industry: "Research & Higher Education"
     location: "Linköping, Sweden"
@@ -23,6 +23,8 @@ positions:
       - "Equalization of DAC frequency-response distortions using linear-phase FIR filters across multiple Nyquist bands."
       - "Derivation of closed-form model-order and complexity predictions using symbolic regression and structured optimization."
       - "Focus on implementability, complexity analysis, and hardware-constrained algorithm design."
+      - "RTL design and FPGA validation (Lattice ECP5) for experimental verification."
+      - "Teaching and/or lab assistant for Signal Processing for Communications, Analog Filters, and Digital Filters."
 
   - company: "University of Havana"
     role: "Researcher and Teaching Assistant"

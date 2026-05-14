@@ -33,9 +33,9 @@ domains:
     title: "Learning-Inspired Signal Processing"
     description: "Use of learning-inspired and unsupervised methods to tune models, discover structure, and improve robustness when labeled data is limited."
 
-  - icon: "chalkboard-teacher"
-    title: "Teaching assistant"
-    description: "Teaching assistant for Signal Processing for Communications, Analog Filters, and Digital Filters."
+  - icon: "microchip"
+    title: "Hardware Implementation"
+    description: "RTL design and FPGA validation (Verilog, Lattice ECP5) for experimental verification of DSP algorithms. Fixed-point and hardware-constrained algorithm design."
 
   # - icon: "globe"
   #   title: "Languages & International Experience"

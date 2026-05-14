@@ -13,6 +13,8 @@ intro: "(Last 3 Years)"
 - A. Quiñones-Espín, M. Perez-Diaz, R. Espín-Coto, **D. Rodriguez-Linares**, and J. D. Lopez-Cabrera, “Automatic detection of breast masses using deep learning with YOLO approach,” *Health Technol.*, vol. 13, no. 6, pp. 915–923, 2023. DOI: [10.1007/s12553-023-00783-x](https://doi.org/10.1007/s12553-023-00783-x)
 
 
+<hr style="border: 0; border-top: 1px solid #444; margin: 1.5rem 0;">
+
 ## Conference Proceedings
 - **D. Rodriguez-Linares**, O. Moryakova, and H. Johansson, “Joint Sampling Frequency Offset Estimation and Compensation Based on the Farrow Structure,” in *Proc. 25th Int. Conf. Digit. Signal Process. (DSP)*, 2025, pp. 1–5. DOI: [10.1109/DSP65409.2025.11074995](https://doi.org/10.1109/DSP65409.2025.11074995)
 - **D. Rodriguez-Linares** and H. Johansson, “Digital Linearizer Based on 1-Bit Quantizations,” in *Proc. IEEE 24th Int. Conf. Commun. Technol. (ICCT)*, 2024, pp. 1659–1663. DOI: [10.1109/ICCT62411.2024.10946352](https://doi.org/10.1109/ICCT62411.2024.10946352)

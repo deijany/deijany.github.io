@@ -6,7 +6,7 @@
 # - Production: Environment variables injected via GitHub Actions
 # - See comments below for setup instructions
 #
-baseURL = "https://deijany.github.io"
+baseURL = "https://deijany.com"
 languageCode = "en-us"
 title = "Deijany RL"
 theme = "careercanvas"

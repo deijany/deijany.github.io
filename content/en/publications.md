@@ -1,9 +1,7 @@
-
-
+---
 title: "Publications"
 intro: "(Last 3 Years)"
-
-
+---
 
 ## Journal Articles
 - **D. Rodriguez-Linares**, O. Moryakova, and H. Johansson, “Joint sampling frequency offset estimation and compensation algorithms based on the Farrow structure,” **Submitted to** *IEEE Open J. Signal Process.*, 2026 (journal extension of DSP 2025 conference paper). arXiv: [2603.00627](https://arxiv.org/abs/2603.00627).

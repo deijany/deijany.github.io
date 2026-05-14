@@ -8,7 +8,7 @@ type: "homepage"
 <center>
 
 **Premio a la Mejor Presentación Oral (Premio de Sesión)** — IEEE ICCT 2024  
-**Beca Completa y Ayuda de Viaje del ICTP** (2017, 2018) —  ICTP  
+**Beca Completa y Ayuda de Viaje del ICTP** (2017, 2018, 2020) —  ICTP  
 **Beca Nacional (Ministerio de Educación, Cuba)** (2010–2015)
 
 </center>

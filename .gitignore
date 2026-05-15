@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# Blog posts (intentionally unpublished)
+content/en/blog/
+content/es/blog/

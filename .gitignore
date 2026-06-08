@@ -3,6 +3,14 @@
 Thumbs.db
 *.log
 
+# Generated files (Vercel builds)
+public/
+docs/
+
 # Blog posts (intentionally unpublished)
 content/en/blog/
 content/es/blog/
+content/ch/blog/
+
+# Dependencies
+node_modules/

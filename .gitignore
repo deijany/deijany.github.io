@@ -13,4 +13,4 @@ content/es/blog/
 content/ch/blog/
 
 # Dependencies
-node_modules/
+node_modules/.github/workflows/deploy-hugo.yml

@@ -1,5 +1,7 @@
-# macOS
+# macOS & OS junk
 .DS_Store
+Thumbs.db
+*.log
 
 # Blog posts (intentionally unpublished)
 content/en/blog/

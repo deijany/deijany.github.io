@@ -2829,6 +2829,14 @@ section[data-animate].fade-in-visible {
     opacity: 1;
   }
 
+.\[lo\:hi\]{
+  lo: hi;
+}
+
+.\[x1\:x2\]{
+  x1: x2;
+}
+
 /* Override Tailwind blue classes to use main color */
 
 .text-blue-600, .text-blue-500, .text-blue-400, .text-blue-300 {

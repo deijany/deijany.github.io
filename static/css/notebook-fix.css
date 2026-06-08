@@ -1,0 +1,43 @@
+/* ==================================================
+   Jupyter Notebook fixes — DARK MODE ONLY
+   ================================================== */
+
+html.dark .jp-Notebook,
+html.dark .jp-Notebook * {
+  color: #e6e6e6;
+}
+
+/* Markdown text */
+html.dark .jp-MarkdownOutput,
+html.dark .jp-RenderedHTMLCommon {
+  color: #e6e6e6;
+}
+
+/* Code cells */
+html.dark .jp-CodeCell .jp-InputArea-editor,
+html.dark pre,
+html.dark code {
+  background-color: #0f172a; /* dark slate */
+  color: #e6e6e6;
+}
+
+/* Output area */
+html.dark .jp-OutputArea,
+html.dark .jp-OutputArea-output,
+html.dark .jp-OutputArea pre {
+  background-color: #0b1220;
+  color: #e6e6e6;
+}
+
+/* Cell borders */
+html.dark .jp-Cell,
+html.dark .jp-InputArea,
+html.dark .jp-OutputArea {
+  border-color: rgba(255,255,255,0.12);
+}
+
+/* In [ ]: prompts */
+html.dark .jp-InputPrompt,
+html.dark .jp-OutputPrompt {
+  color: rgba(230,230,230,0.6);
+}

@@ -40,7 +40,5 @@ quickfacts:
 
   - icon: "language"
     title: "Languages"
-    value: |
-      - 🇪🇸 Spanish (Native)
-      - 🇬🇧 English (Fluent)
+    value: "🇪🇸 Spanish (Native) · 🇬🇧 English (Fluent) · 🇨🇳 Chinese (Novice)"
 ---

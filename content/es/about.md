@@ -34,7 +34,5 @@ quickfacts:
 
   - icon: "language"
     title: "Idiomas"
-    value: |
-      - 🇪🇸 Español (Nativo)
-      - 🇬🇧 Inglés (Fluido)
+    value: "🇪🇸 Español (Nativo) · 🇬🇧 Inglés (Fluido) · 🇨🇳 Chino (Novato)"
 ---

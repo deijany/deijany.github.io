@@ -10,7 +10,10 @@ docs/
 # Blog posts (intentionally unpublished)
 content/en/blog/
 content/es/blog/
-content/ch/blog/
+content/zh/blog/
 
 # Dependencies
-node_modules/.github/workflows/deploy-hugo.yml
+node_modules/
+
+# GitHub workflows
+.github/workflows/

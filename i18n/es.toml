@@ -37,7 +37,7 @@ other = "Ingeniería"
 other = "Contribuciones"
 
 [technical]
-other = "Tech Stack"
+other = "Stack tecnológico"
 
 [language]
 other = "Idioma"
@@ -125,4 +125,46 @@ other = "Ir al inicio"
 
 [certainlyNotHere]
 other = "Seguro que no aquí"
+
+[letsConnect]
+other = "Conectemos"
+
+[name]
+other = "Nombre"
+
+[email]
+other = "Correo electrónico"
+
+[subject]
+other = "Asunto"
+
+[message]
+other = "Mensaje"
+
+[sendMessage]
+other = "Enviar mensaje"
+
+[bookMeeting]
+other = "Reservar una reunión"
+
+[location]
+other = "Ubicación"
+
+[scheduleCall]
+other = "Programar una llamada"
+
+[successMessage]
+other = "¡Gracias! Te responderé pronto."
+
+[errorMessage]
+other = "Error: Por favor, inténtalo de nuevo."
+
+[failedMessage]
+other = "Falló el envío."
+
+[linkedin]
+other = "LinkedIn"
+
+[github]
+other = "GitHub"
 

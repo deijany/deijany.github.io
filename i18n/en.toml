@@ -126,3 +126,45 @@ other = "Go home"
 [certainlyNotHere]
 other = "Certainly, not here"
 
+[letsConnect]
+other = "Let's Connect"
+
+[name]
+other = "Name"
+
+[email]
+other = "Email"
+
+[subject]
+other = "Subject"
+
+[message]
+other = "Message"
+
+[sendMessage]
+other = "Send Message"
+
+[bookMeeting]
+other = "Book a Meeting"
+
+[location]
+other = "Location"
+
+[scheduleCall]
+other = "Schedule a Call"
+
+[successMessage]
+other = "Thank you! I'll get back to you soon."
+
+[errorMessage]
+other = "Error: Please try again."
+
+[failedMessage]
+other = "Failed to submit."
+
+[linkedin]
+other = "LinkedIn"
+
+[github]
+other = "GitHub"
+

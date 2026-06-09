@@ -44,11 +44,11 @@ defaultContentLanguageInSubdir = false
         "Linealización",
         "Sincronización"
       ]
-  [languages.ch]
-    contentDir = "content/ch"
+  [languages.zh]
+    contentDir = "content/zh"
     languageName = "中文"
     weight = 3
-    [languages.ch.params]
+    [languages.zh.params]
       tagline = "信号处理、采样频率同步、线性化和均衡。"
       hero_description = "通信系统研究员（博士已于2026年4月答辩）— 用于现代无线系统的硬件感知、低复杂度信号处理。"
       hero_location = "瑞典林雪平"

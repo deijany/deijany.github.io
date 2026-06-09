@@ -1,0 +1,170 @@
+# 基础 UI 翻译（主题就绪）。按需添加/删除键。
+
+[read_more]
+other = "阅读更多"
+
+[by]
+other = "作者"
+
+[posted_on]
+other = "发布于"
+
+[tags]
+other = "标签"
+
+[contact]
+other = "联系"
+
+[send]
+other = "发送"
+
+[skills]
+other = "技能"
+
+[experience]
+other = "经验"
+
+[about]
+other = "关于"
+
+[blog]
+other = "博客"
+
+[engineering]
+other = "工程"
+
+[contributions]
+other = "贡献"
+
+[technical]
+other = "技术栈"
+
+[language]
+other = "语言"
+
+[getInTouch]
+other = "联系我"
+
+[learnMore]
+other = "了解更多"
+
+[sendMeAMessage]
+other = "给我发送消息"
+
+[contactInformation]
+other = "联系信息"
+
+[priorityContact]
+other = "优先联系方式"
+
+[aboutMe]
+other = "关于我"
+
+[connectOnLinkedIn]
+other = "在 LinkedIn 上联系"
+
+[quickFacts]
+other = "快速了解"
+
+[more]
+other = "更多"
+
+[aboutName]
+other = "关于"
+
+[relatedContent]
+other = "相关内容"
+
+[interests]
+other = "研究兴趣"
+
+[languages]
+other = "语言"
+
+[helloIm]
+other = "你好，我是"
+
+[viewCV]
+other = "查看简历"
+
+[downloadResume]
+other = "下载简历"
+
+[keyAchievements]
+other = "主要成就"
+
+[demoImageAlt]
+other = "演示图像"
+
+[galleryNotFound]
+other = "在以下位置未找到图库图像"
+
+[viewOnGithub]
+other = "在 GitHub 上查看完整源代码"
+
+[iframeIdRequired]
+other = "错误：iframe 短代码需要 'id' 参数。"
+
+[fullscreen]
+other = "全屏"
+
+[youtubePlayerTitle]
+other = "YouTube 视频播放器"
+
+[vimeoPlayerTitle]
+other = "Vimeo 视频播放器"
+
+[pageNotFound]
+other = "页面未找到"
+
+[pageNotFoundSubtitle]
+other = "您要查找的页面不存在。"
+
+[goHome]
+other = "返回主页"
+
+[certainlyNotHere]
+other = "肯定不在这里"
+
+[letsConnect]
+other = "让我们保持联系"
+
+[name]
+other = "名称"
+
+[email]
+other = "电子邮件"
+
+[subject]
+other = "主题"
+
+[message]
+other = "消息"
+
+[sendMessage]
+other = "发送消息"
+
+[bookMeeting]
+other = "预约会议"
+
+[location]
+other = "位置"
+
+[scheduleCall]
+other = "安排通话"
+
+[successMessage]
+other = "感谢！我很快会回复你。"
+
+[errorMessage]
+other = "错误：请重试。"
+
+[failedMessage]
+other = "提交失败。"
+
+[linkedin]
+other = "LinkedIn"
+
+[github]
+other = "GitHub"
+

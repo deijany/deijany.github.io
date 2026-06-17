@@ -1,3 +1,34 @@
+/* publication list counters with J# / C# labels */
+ol.journal-list {
+  counter-reset: journal-counter;
+  list-style: none;
+  padding-left: 0;
+}
+ol.journal-list li {
+  counter-increment: journal-counter;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+ol.journal-list li::before {
+  content: "[\2009J" counter(journal-counter) "\2009] ";
+  font-weight: 600;
+}
+
+ol.conference-list {
+  counter-reset: conference-counter;
+  list-style: none;
+  padding-left: 0;
+}
+ol.conference-list li {
+  counter-increment: conference-counter;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+ol.conference-list li::before {
+  content: "[C" counter(conference-counter) "] ";
+  font-weight: 600;
+}
+
 /* shrink the hero section */
 .hero-section{
   min-height: auto !important;      /* overrides min-h-screen if present */

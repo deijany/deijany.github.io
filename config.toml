@@ -126,6 +126,8 @@ sectionPagesMenu = 'main'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    [markup.goldmark.parser.attribute]
+      block = true
   [markup.highlight]
     style = "monokai"
 

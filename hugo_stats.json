@@ -87,7 +87,6 @@
       "card-hover-interactive",
       "company-card",
       "company-link",
-      "conference-list",
       "contact-card",
       "dark:bg-bg",
       "dark:bg-bg-secondary",
@@ -202,7 +201,6 @@
       "items-center",
       "items-end",
       "items-start",
-      "journal-list",
       "justify-between",
       "justify-center",
       "justify-end",
@@ -424,9 +422,11 @@
       "about",
       "aboutModal",
       "aboutModalBtn",
+      "artículos",
       "awards",
       "closeAboutModal",
       "conference-proceedings",
+      "conferencias",
       "contact",
       "contact-form",
       "darkModeToggle",
@@ -446,7 +446,9 @@
       "skills",
       "subject",
       "why-these-frequencies",
-      "windowing-and-coherent-vs-noncoherent-sampling-python-tutorial"
+      "windowing-and-coherent-vs-noncoherent-sampling-python-tutorial",
+      "会议论文",
+      "期刊论文"
     ]
   }
 }

@@ -26,7 +26,7 @@ positions:
       - "Diseño RTL y validación en FPGA (Lattice ECP5) para verificación experimental."
       - "Asistente de docencia y/o laboratorio en los cursos Procesamiento de Señales para Comunicaciones, Filtros Analógicos y Filtros Digitales."
 
-  - company: "University of Havana"
+  - company: "Universidad de la Habana"
     role: "Investigador y Asistente de Docencia"
     period: "2019 – 2020"
     industry: "Investigación y Educación Superior"

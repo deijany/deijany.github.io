@@ -12,7 +12,7 @@ positions:
   - company: "Universidad de Linköping"
     company_url: "https://liu.se"
     role: "Investigador Doctoral — Sistemas de Comunicaciones"
-    period: "2021 – Presente"
+    period: "2021 – 2026"
     industry: "Investigación y Educación Superior"
     location: "Linköping, Suecia"
     company_description: "División de Sistemas de Comunicaciones, Departamento de Ingeniería Eléctrica"

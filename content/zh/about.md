@@ -29,7 +29,7 @@ personal: >-
 
 quickfacts:
   - icon: "graduation-cap"
-    title: "当前身份"
+    title: "上一任身份"
     value: "电气工程博士，专业方向为通信系统（2026 年 4 月 17 日完成答辩）"
 
   - icon: "cogs"

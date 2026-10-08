@@ -4,7 +4,7 @@ type: "homepage"
 featured_image: "/images/face4.jpeg"
 
 intro: >-
-  Investigador doctoral en procesamiento de señales que trabaja en estimación, compensación, sincronización, linealización y ecualización, con un fuerte énfasis en la robustez frente a efectos de hardware no ideales y condiciones de ruido. Desarrolla algoritmos de baja complejidad y conscientes del hardware, incluyendo linealizadores inspirados en redes neuronales, junto con técnicas basadas en modelos clásicos.
+  Ingeniero de DSP/ML con doctorado en Ingeniería Eléctrica, especializado en algoritmos de baja complejidad y adaptados al hardware para el procesamiento de señales en sistemas de comunicaciones inalámbricas. Diseña y valida algoritmos de sincronización, linealización y ecualización bajo restricciones reales de hardware, buscando el equilibrio entre precisión, complejidad y facilidad de implementación, con experiencia en diseño RTL y síntesis en FPGA. Especial interés en métodos que combinen rigor teórico, robustez y eficiencia computacional, aplicables en la práctica y a gran escala.
 
 study: >-
   Obtuve la Licenciatura en Ingeniería Nuclear (2015), el Diploma de Posgrado en Física Médica (2016) y la Maestría en Ingeniería Nuclear (2018) en el Instituto Superior de Tecnologías y Ciencias Aplicadas (InSTEC), Universidad de La Habana, Cuba. Obtuve el doctorado en Ingeniería Eléctrica, con especialización en Sistemas de Comunicaciones, en la Universidad de Linköping, Suecia (2026).
@@ -21,7 +21,7 @@ personal: >-
 
 quickfacts:
   - icon: "graduation-cap"
-    title: "Posición Actual"
+    title: "Posición previa"
     value: "Doctorado en Ingeniería Eléctrica con especialización en Sistemas de Comunicaciones (defendido el 17 de abril de 2026)"
 
   - icon: "cogs"

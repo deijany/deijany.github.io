@@ -13,7 +13,7 @@ positions:
   - company: "林雪平大学"
     company_url: "https://liu.se"
     role: "博士研究员 - 通信系统"
-    period: "2021 年至今"
+    period: "2021 - 2026"
     industry: "科研与高等教育"
     location: "瑞典林雪平"
     company_description: "电气工程系通信系统研究部"

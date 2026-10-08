@@ -12,7 +12,7 @@ positions:
   - company: "Linköping University"
     company_url: "https://liu.se"
     role: "Ph.D. Researcher — Communication Systems"
-    period: "2021 – Present"
+    period: "2021 – 2026"
     industry: "Research & Higher Education"
     location: "Linköping, Sweden"
     company_description: "Division of Communication Systems, Department of Electrical Engineering"

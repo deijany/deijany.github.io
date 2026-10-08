@@ -4,7 +4,7 @@ type: "homepage"
 featured_image: "/images/face4.jpeg"
 
 intro: >-
-  PhD researcher in signal processing working on estimation, compensation, synchronization, linearization, and equalization, with a strong focus on robustness under non-ideal hardware effects and noisy conditions. Develops hardware-aware, low-complexity algorithms, including neural-network–inspired linearizers, alongside classical model-based techniques.
+  DSP/ML engineer with a Ph.D. in Electrical Engineering, specialized in low-complexity, hardware-aware signal processing for wireless communication systems. Designs and validates algorithms for synchronization, linearization, and equalization under real hardware constraints, balancing accuracy, complexity, and deployability, including RTL design and FPGA synthesis experience. Particularly interested in methods that combine theoretical rigor, robustness, and computational efficiency for deployment in practice and at scale.
 
 study: >-
   I received a B.Sc. in Nuclear Engineering (2015), a Postgraduate Diploma in Medical Physics (2016), and an M.Sc. in Nuclear Engineering (2018) from the Higher Institute of Technologies and Applied Sciences (InSTEC), University of Havana, Cuba. I received the Ph.D. degree in Electrical Engineering, with specialization in Communication Systems, from Linköping University, Sweden (2026).
@@ -27,7 +27,7 @@ personal: >-
 
 quickfacts:
   - icon: "graduation-cap"
-    title: "Current Position"
+    title: "Last Position"
     value: "Ph.D. in Electrical Engineering with specialization in Communication Systems (defended April 17, 2026)"
 
   - icon: "cogs"

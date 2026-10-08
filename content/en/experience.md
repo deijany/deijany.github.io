@@ -29,7 +29,7 @@ positions:
   - company: "University of Havana"
     role: "Researcher and Teaching Assistant"
     period: "2019 – 2020"
-    industry: "Research & Higher Education"
+    industry: "Research"
     location: "Havana, Cuba"
     company_description: "Higher Institute of Technologies and Applied Sciences (InSTEC)"
     bullet_points:
@@ -39,7 +39,7 @@ positions:
   - company: "Center for State Control of Medicines, Equipment and Medical Devices (CECMED)"
     role: "Medical Physicist — QA and Modeling"
     period: "2015 – 2018"
-    industry: "Medical Physics & Healthcare"
+    industry: "Medical Physics"
     location: "Havana, Cuba"
     company_description: "Cuban regulatory authority for medicines and medical devices"
     bullet_points:

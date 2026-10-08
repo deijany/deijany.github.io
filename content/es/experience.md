@@ -37,7 +37,7 @@ positions:
       - "Asistente de docencia en Matemática Numérica II y Fundamentos de Física Médica."
 
   - company: "Centro para el Control Estatal de Medicamentos, Equipos y Dispositivos Médicos (CECMED)"
-    role: "Físico Médico — Aseguramiento de Calidad y Modelado"
+    role: "Físico Médico"
     period: "2015 – 2018"
     industry: "Física Médica y Salud"
     location: "La Habana, Cuba"
